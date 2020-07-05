@@ -1,10 +1,23 @@
 import React from "react";
+import Navbar from "./components/Navbar";
+import Temp from "./components/Temp";
 import "./stylesheets/App.css";
 
 const App = () => {
 	return (
-		<div>
-			<h1>Hi Sanju</h1>
+		<div className="app-container">
+			<div className="left"></div>
+			<div className="mid">
+				<Navbar />
+				<Temp />
+				<Navbar />
+				<Temp />
+				<Navbar />
+				<Temp />
+				<Navbar />
+				<Temp />
+			</div>
+			<div className="right"></div>
 		</div>
 	);
 };
