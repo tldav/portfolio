@@ -10,7 +10,7 @@
 } */
 
 * {
-	background-color: darkgray;
+	background-color: lightgray;
 }
 
 .app-container {
@@ -18,7 +18,7 @@
 }
 
 .left {
-	width: 30%;
+	width: 50%;
 	/* background-color: maroon; */
 }
 
@@ -27,6 +27,15 @@
 }
 
 .right {
-	width: 30%;
+	width: 50%;
 	/* background-color: maroon; */
+}
+
+.me {
+	border-radius: 50%;
+	max-width: 80px;
+}
+
+.dark {
+	background-color: black;
 }

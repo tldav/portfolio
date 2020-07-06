@@ -9,13 +9,10 @@ const App = () => {
 			<div className="left"></div>
 			<div className="mid">
 				<Navbar />
-				<Temp />
-				<Navbar />
-				<Temp />
-				<Navbar />
-				<Temp />
-				<Navbar />
-				<Temp />
+				<Temp className="dark" />
+				<Temp className="light" />
+				<Temp className="dark" />
+				<Temp className="light" />
 			</div>
 			<div className="right"></div>
 		</div>
