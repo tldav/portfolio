@@ -10,7 +10,7 @@
 } */
 
 * {
-	background-color: lightgray;
+	background-color: black;
 }
 
 .app-container {
@@ -39,3 +39,38 @@
 .dark {
 	background-color: black;
 }
+
+.temp {
+	padding: 20px;
+}
+
+.side-nav {
+	position: fixed;
+	list-style: none;
+}
+
+.react-icon {
+	color: #4bd8eb;
+}
+
+.js-icon {
+	color: #f7e030;
+}
+
+.git-icon {
+	color: #de4c36;
+}
+
+.node-icon {
+	color: #8cc84b;
+}
+
+/****
+#f7e030   - javascript
+
+#de4c36    - git
+
+#8cc84b     - node js
+
+
+*/

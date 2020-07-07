@@ -1,6 +1,7 @@
 import React from "react";
-import Navbar from "./components/Navbar";
+import Intro from "./components/Intro";
 import Temp from "./components/Temp";
+import SideNav from "./components/SideNav";
 import "./stylesheets/App.css";
 
 const App = () => {
@@ -8,13 +9,19 @@ const App = () => {
 		<div className="app-container">
 			<div className="left"></div>
 			<div className="mid">
-				<Navbar />
-				<Temp className="dark" />
-				<Temp className="light" />
-				<Temp className="dark" />
-				<Temp className="light" />
+				<Intro />
+				<Temp />
+				<Temp />
+				<Temp />
+				<Temp />
+				<Temp />
+				<Temp />
+				<Temp />
+				<Temp />
 			</div>
-			<div className="right"></div>
+			<div className="right">
+				<SideNav />
+			</div>
 		</div>
 	);
 };
