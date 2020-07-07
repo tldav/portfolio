@@ -10,7 +10,7 @@
 } */
 
 * {
-	background-color: black;
+	background-color: darkgray;
 }
 
 .app-container {
@@ -19,7 +19,6 @@
 
 .left {
 	width: 50%;
-	/* background-color: maroon; */
 }
 
 .mid {
@@ -28,7 +27,6 @@
 
 .right {
 	width: 50%;
-	/* background-color: maroon; */
 }
 
 .me {
@@ -46,7 +44,22 @@
 
 .side-nav {
 	position: fixed;
+	/* padding-top: 30px; */
+	background-color: maroon;
+	margin-top: 60px;
+	margin-left: 30px;
+}
+
+.side-nav ul {
 	list-style: none;
+	padding: 0;
+	margin: 0;
+	background-color: maroon;
+}
+
+.side-nav li {
+	padding: 10px;
+	background-color: maroon;
 }
 
 .react-icon {
