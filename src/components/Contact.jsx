@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Contact = () => {
 	const [status, setStatus] = useState("");
@@ -24,14 +25,19 @@ const Contact = () => {
 
 	return (
 		<form
+			className="ui form"
 			onSubmit={submitForm}
 			action="https://formspree.io/xleppyja"
 			method="POST"
 		>
+			<label>Name:</label>
+			<input type="text" name="name" />
 			<label>Email:</label>
 			<input type="email" name="email" />
-			<label>Message:</label>
-			<input type="text" name="message" />
+			<div className="field">
+				<label>Message:</label>
+				<textarea rows="4" type="text" name="message" />
+			</div>
 			{status === "SUCCESS" ? <p>Thanks!</p> : <button>Submit</button>}
 			{status === "ERROR" && <p>Ooops! There was an error.</p>}
 		</form>
