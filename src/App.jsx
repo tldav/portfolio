@@ -2,6 +2,7 @@ import React from "react";
 import Intro from "./components/Intro";
 import Temp from "./components/Temp";
 import SideNav from "./components/SideNav";
+import Contact from "./components/Contact";
 import "./stylesheets/App.css";
 
 const App = () => {
@@ -18,6 +19,7 @@ const App = () => {
 				<Temp />
 				<Temp />
 				<Temp />
+				<Contact />
 			</div>
 			<div className="right">
 				<SideNav />

@@ -9,13 +9,25 @@ const SideNav = () => {
 		<div className="side-nav">
 			<ul>
 				<li>
-					<FontAwesomeIcon icon={faGithub} /> Github
+					<FontAwesomeIcon icon={faGithub} />{" "}
+					<a href="https://github.com/tldav" target="_blank">
+						Github
+					</a>
 				</li>
 				<li>
-					<FontAwesomeIcon icon={faLinkedin} /> Linkedin
+					<FontAwesomeIcon icon={faLinkedin} />{" "}
+					<a
+						href="https://www.linkedin.com/in/tldav/"
+						target="_blank"
+					>
+						Linkedin
+					</a>
 				</li>
 				<li>
-					<FontAwesomeIcon icon={faFile} /> Resume
+					<FontAwesomeIcon icon={faFile} />{" "}
+					<a href="/assets/tdavis-resume.pdf" target="_blank">
+						Resume
+					</a>
 				</li>
 			</ul>
 		</div>

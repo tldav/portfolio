@@ -10,7 +10,11 @@ import {
 const Intro = () => {
 	return (
 		<div className="intro">
-			<img className="me" src="/me.jpg" alt="Headshot of Thomas Davis" />
+			<img
+				className="me"
+				src="/assets/me.jpg"
+				alt="Headshot of Thomas Davis"
+			/>
 			<FontAwesomeIcon
 				icon={faReact}
 				className="react-icon"

@@ -1,14 +1,3 @@
-/* html {
-	height: 100%;
-	background: rgb(151, 139, 154);
-	background: linear-gradient(
-		29deg,
-		rgba(151, 139, 154, 1) 0%,
-		rgba(18, 17, 17, 1) 100%
-	);
-	background-size: cover;
-} */
-
 * {
 	background-color: darkgray;
 }
@@ -54,12 +43,12 @@
 	list-style: none;
 	padding: 0;
 	margin: 0;
-	background-color: maroon;
 }
 
 .side-nav li {
 	padding: 10px;
-	background-color: maroon;
+	font-size: 18px;
+	/* background-color: maroon; */
 }
 
 .react-icon {
