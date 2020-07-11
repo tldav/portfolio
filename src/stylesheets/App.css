@@ -12,11 +12,24 @@
 
 .mid {
 	max-width: 83rem;
+	padding: 20px;
 }
 
 .right {
 	width: 50%;
 }
+
+.contact {
+	display: flex;
+}
+
+/* .contact-left {
+	width: 100%;
+}
+
+.contact-right {
+	width: 50%;
+} */
 
 .me {
 	border-radius: 50%;
@@ -28,7 +41,7 @@
 }
 
 .temp {
-	padding: 20px;
+	padding: 20px 0;
 }
 
 .side-nav {
@@ -65,6 +78,39 @@
 
 .node-icon {
 	color: #8cc84b;
+}
+
+.contact-form {
+	display: flex;
+	flex-flow: column;
+}
+
+.contact-form input,
+textarea,
+button {
+	border-radius: 5px;
+	margin: 5px 0;
+	min-height: 35px;
+	background-color: whitesmoke;
+	border: none;
+}
+
+.contact-form input:focus,
+textarea:focus,
+button:focus {
+	outline: none;
+}
+
+.send-icon {
+	background-color: maroon;
+	color: whitesmoke;
+}
+
+.send-button {
+	display: block;
+	width: 100%;
+	background-color: maroon;
+	border: 2px solid black;
 }
 
 /****

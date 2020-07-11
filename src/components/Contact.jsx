@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTelegramPlane } from "@fortawesome/free-brands-svg-icons";
 
 const Contact = () => {
 	const [status, setStatus] = useState("");
@@ -24,24 +25,56 @@ const Contact = () => {
 	};
 
 	return (
-		<form
-			className="ui form"
-			onSubmit={submitForm}
-			action="https://formspree.io/xleppyja"
-			method="POST"
-		>
-			<label>Name:</label>
-			<input type="text" name="name" />
-			<label>Email:</label>
-			<input type="email" name="email" />
-			<div className="field">
-				<label>Message:</label>
-				<textarea rows="4" type="text" name="message" />
-			</div>
-			{status === "SUCCESS" ? <p>Thanks!</p> : <button>Submit</button>}
-			{status === "ERROR" && <p>Ooops! There was an error.</p>}
-		</form>
+		<div className="contact">
+			<form
+				className="contact-form"
+				onSubmit={submitForm}
+				action="https://formspree.io/xleppyja"
+				method="POST"
+			>
+				<input
+					type="text"
+					name="name"
+					placeholder="Name"
+					onFocus={(e) => (e.target.placeholder = "")}
+					onBlur={(e) => (e.target.placeholder = "Name")}
+				/>
+
+				<input
+					type="email"
+					name="email"
+					placeholder="Email"
+					onFocus={(e) => (e.target.placeholder = "")}
+					onBlur={(e) => (e.target.placeholder = "Email")}
+				/>
+
+				<textarea
+					rows="4"
+					type="text"
+					name="message"
+					placeholder="Message"
+					onFocus={(e) => (e.target.placeholder = "")}
+					onBlur={(e) => (e.target.placeholder = "Message")}
+				/>
+
+				{status === "SUCCESS" ? (
+					<p>Thanks!</p>
+				) : (
+					<button className="send-button">
+						{" "}
+						<FontAwesomeIcon
+							icon={faTelegramPlane}
+							size={"2x"}
+							className="send-icon"
+						/>
+					</button>
+				)}
+				{status === "ERROR" && <p>Ooops! There was an error.</p>}
+			</form>
+		</div>
 	);
 };
 
 export default Contact;
+
+// className="ui form"
