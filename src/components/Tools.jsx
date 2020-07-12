@@ -21,7 +21,7 @@ const Tools = () => {
 				<li>stuff</li>
 				<li>stuff</li>
 			</ul>
-			<div className="row fa-icons">
+			<div className="row fa-icons d-flex">
 				<div className="col-md-3 col-6">
 					<FontAwesomeIcon
 						icon={faJs}

@@ -17,9 +17,8 @@ const App = () => {
 				<Temp />
 				<Temp />
 				<Temp />
-				<div className="contact-container">
-					<Contact className="contact-left" />
-				</div>
+
+				<Contact />
 			</div>
 			<div className="right">
 				<SideNav />

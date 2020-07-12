@@ -1,5 +1,25 @@
 body {
+	/* background-color: lightsteelblue; */
 	background-color: darkgray;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track-piece {
+	background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #cbcbcb;
+	outline: 2px solid #fff;
+	outline-offset: -2px;
+	border: 0.1px solid #b7b7b7;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background-color: #909090;
 }
 
 html {
@@ -13,18 +33,13 @@ html {
 .left {
 	width: 40%;
 }
-
-.mid {
-	max-width: 55rem;
-	padding: 20px;
-}
-
 .right {
 	width: 40%;
 }
 
-.contact-container {
-	/* width: 50%; */
+.mid {
+	max-width: 80rem;
+	padding: 20px;
 }
 
 .me {
@@ -34,6 +49,7 @@ html {
 
 .temp {
 	padding: 20px 0;
+	background-color: lightsteelblue;
 }
 
 .side-nav {
@@ -71,13 +87,17 @@ html {
 	color: #8cc84b;
 }
 
+.fa-icons {
+	background-color: maroon;
+}
+
+#contact {
+	background-color: lightsteelblue;
+}
+
 .contact-form {
 	display: flex;
 	flex-flow: column;
-}
-
-.fa-icons {
-	background-color: maroon;
 }
 
 .contact-form input,
@@ -117,3 +137,23 @@ button:focus {
 
 
 */
+
+@media (max-width: 768px) {
+	.left,
+	.right {
+		display: none;
+	}
+	.mid {
+		width: 100%;
+	}
+}
+
+@media (max-width: 1280px) {
+	.left,
+	.right {
+		width: 15%;
+	}
+	.side-nav {
+		display: none;
+	}
+}
