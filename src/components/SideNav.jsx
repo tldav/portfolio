@@ -1,8 +1,15 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faFile as faFileAlt } from "@fortawesome/free-solid-svg-icons";
-import { faFile } from "@fortawesome/free-regular-svg-icons";
+import {
+	faFile,
+	faEnvelope,
+	faComment
+} from "@fortawesome/free-regular-svg-icons";
+import {
+	faPhone as faPhoneAlt,
+	faMobileAlt
+} from "@fortawesome/free-solid-svg-icons";
 
 const SideNav = () => {
 	return (
@@ -10,7 +17,11 @@ const SideNav = () => {
 			<ul>
 				<li>
 					<FontAwesomeIcon icon={faGithub} />{" "}
-					<a href="https://github.com/tldav" target="_blank">
+					<a
+						href="https://github.com/tldav"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
 						Github
 					</a>
 				</li>
@@ -19,14 +30,25 @@ const SideNav = () => {
 					<a
 						href="https://www.linkedin.com/in/tldav/"
 						target="_blank"
+						rel="noopener noreferrer"
 					>
 						Linkedin
 					</a>
 				</li>
 				<li>
 					<FontAwesomeIcon icon={faFile} />{" "}
-					<a href="/assets/tdavis-resume.pdf" target="_blank">
+					<a
+						href="/assets/tdavis-resume.pdf"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
 						Resume
+					</a>
+				</li>
+				<li>
+					<FontAwesomeIcon icon={faMobileAlt} />
+					<a href="#contact" rel="noopener noreferrer">
+						Contact
 					</a>
 				</li>
 			</ul>

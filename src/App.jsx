@@ -8,16 +8,12 @@ import "./stylesheets/App.css";
 
 const App = () => {
 	return (
-		<div className="app-container">
+		<div className="app-container ">
 			<div className="left"></div>
 			<div className="mid">
 				<Intro />
 				<Temp />
 				<Tools />
-				<Temp />
-				<Temp />
-				<Temp />
-				<Temp />
 				<Temp />
 				<Temp />
 				<Temp />
