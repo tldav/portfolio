@@ -12,6 +12,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const SideNav = () => {
+	const cLink = "  Contact";
 	return (
 		<div className="side-nav">
 			<ul>
@@ -48,7 +49,7 @@ const SideNav = () => {
 				<li>
 					<FontAwesomeIcon icon={faMobileAlt} />
 					<a href="#contact" rel="noopener noreferrer">
-						Contact
+						{cLink}
 					</a>
 				</li>
 			</ul>

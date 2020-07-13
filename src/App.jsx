@@ -4,6 +4,7 @@ import Temp from "./components/Temp";
 import SideNav from "./components/SideNav";
 import Contact from "./components/Contact";
 import Tools from "./components/Tools";
+import Projects from "./components/Projects";
 import "./stylesheets/App.css";
 
 const App = () => {
@@ -17,7 +18,6 @@ const App = () => {
 				<Temp />
 				<Temp />
 				<Temp />
-
 				<Contact />
 			</div>
 			<div className="right">

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
 	faReact,
@@ -8,8 +8,19 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 const Tools = () => {
+	const [isDestkop, setDesktop] = useState(window.innerWidth > 500);
+
+	const updateMedia = () => {
+		setDesktop(window.innerWidth > 500);
+	};
+
+	useEffect(() => {
+		window.addEventListener("resize", updateMedia);
+		return () => window.removeEventListener("resize", updateMedia);
+	});
+
 	return (
-		<div className="tools container">
+		<div className="tools">
 			<ul>
 				<li>stuff</li>
 				<li>stuff</li>
@@ -21,33 +32,33 @@ const Tools = () => {
 				<li>stuff</li>
 				<li>stuff</li>
 			</ul>
-			<div className="row fa-icons d-flex">
-				<div className="col-md-3 col-6">
+			<div className="fa-icons">
+				<div className="">
 					<FontAwesomeIcon
 						icon={faJs}
 						className="js-icon"
-						size={"6x"}
+						size={isDestkop ? "6x" : "5x"}
 					/>
 				</div>
-				<div className="col-md-3 col-6">
+				<div className="">
 					<FontAwesomeIcon
 						icon={faReact}
 						className="react-icon"
-						size={"6x"}
+						size={isDestkop ? "6x" : "5x"}
 					/>
 				</div>
-				<div className="col-md-3 col-6">
+				<div className="">
 					<FontAwesomeIcon
 						icon={faNodeJs}
 						className="node-icon"
-						size={"6x"}
+						size={isDestkop ? "6x" : "5x"}
 					/>
 				</div>
-				<div className="col-md-3 col-6">
+				<div className="">
 					<FontAwesomeIcon
 						icon={faGitAlt}
 						className="git-icon"
-						size={"6x"}
+						size={isDestkop ? "6x" : "5x"}
 					/>
 				</div>
 			</div>

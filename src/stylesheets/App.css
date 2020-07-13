@@ -1,6 +1,8 @@
 body {
 	/* background-color: lightsteelblue; */
 	background-color: darkgray;
+	font-family: "Montserrat", sans-serif;
+	line-height: 1.71429;
 }
 
 ::-webkit-scrollbar {
@@ -42,7 +44,7 @@ html {
 
 .mid {
 	max-width: 60rem;
-	padding: 20px;
+	padding: 0 20px;
 }
 
 .me {
@@ -52,6 +54,15 @@ html {
 
 .temp {
 	padding: 20px 0;
+	background-color: #750ff7;
+	color: #fff;
+}
+
+.intro {
+	background-color: lightsteelblue;
+}
+
+.tools {
 	background-color: lightsteelblue;
 }
 
@@ -91,7 +102,10 @@ html {
 }
 
 .fa-icons {
-	background-color: maroon;
+	/* background-color: maroon; */
+	display: flex;
+	justify-content: space-around;
+	flex-flow: row wrap;
 }
 
 #contact {
@@ -137,7 +151,7 @@ button:focus {
 		display: none;
 	}
 	.mid {
-		width: 100%;
+		/* width: 100%; */
 	}
 }
 
@@ -147,3 +161,5 @@ button:focus {
 		display: none;
 	}
 }
+
+/* color scheme? #750ff7 */
