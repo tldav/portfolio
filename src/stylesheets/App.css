@@ -34,14 +34,6 @@ html {
 	justify-content: center;
 }
 
-/* .left {
-	width: 40%;
-} */
-
-/* .right {
-	width: 40%;
-} */
-
 .mid {
 	max-width: 60rem;
 	padding: 0 20px;
@@ -68,7 +60,6 @@ html {
 
 .side-nav {
 	position: fixed;
-	/* padding-top: 30px; */
 	margin-top: 60px;
 	margin-left: 30px;
 }
@@ -82,7 +73,21 @@ html {
 .side-nav li {
 	padding: 10px;
 	font-size: 18px;
-	/* background-color: maroon; */
+	direction: rtl;
+}
+
+.side-nav a {
+	color: #750ff7;
+	font-weight: bolder;
+	margin-left: 10px;
+}
+
+.side-nav a:hover {
+	color: black;
+}
+
+.side-nav a:hover ~ .pap {
+	color: #750ff7;
 }
 
 .react-icon {
@@ -134,15 +139,22 @@ button:focus {
 }
 
 .send-icon {
-	background-color: maroon;
+	background-color: #750ff7;
 	color: whitesmoke;
 }
 
 .send-button {
 	display: block;
 	width: 100%;
-	background-color: maroon;
+	background-color: #750ff7;
 	border: 2px solid black;
+}
+
+.projects img {
+	box-sizing: border-box;
+	width: 383.98px;
+	height: 255.98px;
+	border-radius: 5px;
 }
 
 @media (max-width: 768px) {

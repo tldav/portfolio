@@ -8,16 +8,15 @@ import {
 } from "@fortawesome/free-regular-svg-icons";
 import {
 	faPhone as faPhoneAlt,
-	faMobileAlt
+	faMobileAlt,
+	faDirections
 } from "@fortawesome/free-solid-svg-icons";
 
 const SideNav = () => {
-	const cLink = "  Contact";
 	return (
 		<div className="side-nav">
 			<ul>
 				<li>
-					<FontAwesomeIcon icon={faGithub} />{" "}
 					<a
 						href="https://github.com/tldav"
 						target="_blank"
@@ -25,9 +24,9 @@ const SideNav = () => {
 					>
 						Github
 					</a>
+					<FontAwesomeIcon className="pap" icon={faGithub} />{" "}
 				</li>
 				<li>
-					<FontAwesomeIcon icon={faLinkedin} />{" "}
 					<a
 						href="https://www.linkedin.com/in/tldav/"
 						target="_blank"
@@ -35,9 +34,9 @@ const SideNav = () => {
 					>
 						Linkedin
 					</a>
+					<FontAwesomeIcon className="pap" icon={faLinkedin} />{" "}
 				</li>
 				<li>
-					<FontAwesomeIcon icon={faFile} />{" "}
 					<a
 						href="/assets/tdavis-resume.pdf"
 						target="_blank"
@@ -45,12 +44,13 @@ const SideNav = () => {
 					>
 						Resume
 					</a>
+					<FontAwesomeIcon className="pap" icon={faFile} />{" "}
 				</li>
 				<li>
-					<FontAwesomeIcon icon={faMobileAlt} />
 					<a href="#contact" rel="noopener noreferrer">
-						{cLink}
+						Contact
 					</a>
+					<FontAwesomeIcon className="pap" icon={faMobileAlt} />
 				</li>
 			</ul>
 		</div>

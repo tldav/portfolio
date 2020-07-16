@@ -19,6 +19,7 @@ const App = () => {
 				<Temp />
 				<Temp />
 				<Contact />
+				<Projects />
 			</div>
 			<div className="right">
 				<SideNav />
