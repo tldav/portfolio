@@ -16,7 +16,7 @@ const Projects = () => {
 						className="content-image"
 						src="assets/alt-space-360.jpg"
 					/>
-					<h3 className="proj-title">YodaScope</h3>
+					<h1 className="proj-title yoda-title">YodaScope</h1>
 					<div className="content-details fadeIn-bottom">
 						<h3 className="content-title">This is a title</h3>
 						<p className="content-text">
@@ -29,7 +29,11 @@ const Projects = () => {
 			<div className="proj-container">
 				<div className="content">
 					<div className="content-overlay"></div>
-					<img className="content-image" src="assets/plum-360.jpg" />
+					<img
+						className="content-image"
+						src="assets/alt-plum-360.jpg"
+					/>
+					<h1 className="proj-title plumm-title">plumm.it</h1>
 					<div className="content-details fadeIn-bottom">
 						<h3 className="content-title">This is a title</h3>
 						<p className="content-text">
@@ -44,7 +48,11 @@ const Projects = () => {
 			<div className="proj-container">
 				<div className="content">
 					<div className="content-overlay"></div>
-					<img className="content-image" src="assets/fit.png" />
+					<img
+						className="content-image"
+						src="assets/alt-fit-360.jpg"
+					/>
+					<h1 className="proj-title fit-title">Fit Tracker</h1>
 					<div className="content-details fadeIn-bottom">
 						<h3 className="content-title">This is a title</h3>
 						<p className="content-text">
@@ -57,7 +65,13 @@ const Projects = () => {
 			<div className="proj-container">
 				<div className="content">
 					<div className="content-overlay"></div>
-					<img className="content-image" src="assets/charity.png" />
+					<img
+						className="content-image"
+						src="assets/alt-charity-360.jpg"
+					/>
+					<h1 className="proj-title charity-title">
+						Charity Tracker
+					</h1>
 					<div className="content-details fadeIn-bottom">
 						<h3 className="content-title">This is a title</h3>
 						<p className="content-text">

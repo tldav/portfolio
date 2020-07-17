@@ -214,6 +214,7 @@ button:focus {
 } */
 
 .proj-title {
+	font-size: 29px;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -224,6 +225,30 @@ button:focus {
 	-webkit-transition: all 0.4s ease-in-out 0s;
 	-moz-transition: all 0.4s ease-in-out 0s;
 	transition: all 0.4s ease-in-out 0s;
+}
+
+.yoda-title {
+	color: #ecc94b;
+	font-family: "Russo One", sans-serif;
+	font-weight: bolder;
+}
+
+.plumm-title {
+	color: green;
+	font-family: "Ultra", serif;
+
+	/* 3d1d4a
+    19111b */
+}
+
+.fit-title {
+	color: rgb(10, 0, 97);
+	font-family: "Trade Winds", cursive;
+}
+
+.charity-title {
+	color: orangered;
+	font-family: "Lobster", cursive;
 }
 
 .content {
