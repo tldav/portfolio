@@ -187,6 +187,14 @@ button:focus {
 
 /* Raleway font? */
 
+/* plumm.it is ultra font  */
+
+/* scope is Russo One */
+
+/* fitness is trade winds  */
+
+/* charity is lobster  */
+
 .proj-container {
 	padding: 1em 0;
 	float: left;
@@ -205,6 +213,19 @@ button:focus {
 	}
 } */
 
+.proj-title {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #fff;
+	padding: 0;
+	margin: 0;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-moz-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
+}
+
 .content {
 	position: relative;
 	width: 90%;
@@ -214,7 +235,7 @@ button:focus {
 }
 
 .content .content-overlay {
-	background: black;
+	background: #750ff7;
 	position: absolute;
 	height: 100%;
 	width: 100%;
@@ -230,6 +251,12 @@ button:focus {
 
 .content:hover .content-overlay {
 	opacity: 1;
+}
+.content:hover .proj-title {
+	opacity: 0;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-moz-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
 }
 
 .content-image {
@@ -269,7 +296,7 @@ button:focus {
 
 .content-details p {
 	color: #fff;
-	font-size: 0.8em;
+	font-size: 1em;
 }
 
 .fadeIn-bottom {
