@@ -114,12 +114,17 @@
 	opacity: 1;
 }
 
-.content-details h3 {
-	color: #fff;
-	font-weight: 500;
+.content-details a {
+	background-color: #fff;
+	color: #750ff7;
+	font-weight: 700;
 	letter-spacing: 0.15em;
 	margin-bottom: 0.5em;
 	text-transform: uppercase;
+	padding: 0 20px;
+	border: white 2px solid;
+	border-radius: 5px;
+	margin: 0 20px;
 }
 
 .content-details p {

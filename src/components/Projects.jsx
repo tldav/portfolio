@@ -18,12 +18,11 @@ const Projects = () => {
 								{project.name}
 							</h1>
 							<div className="content-details fadeIn-bottom">
-								<h3 className="content-title">
-									This is a title
-								</h3>
 								<p className="content-text">
 									{project.description}
 								</p>
+								<a href={project.appUrl}>App</a>
+								<a href={project.repoUrl}>Code</a>
 							</div>
 						</div>
 					</div>
