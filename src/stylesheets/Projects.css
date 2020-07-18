@@ -1,0 +1,132 @@
+.proj-container {
+	/* padding: 1em 0; */
+	float: left;
+	width: 50%;
+}
+@media screen and (max-width: 687px) {
+	.proj-container {
+		display: block;
+		width: 100%;
+		padding: 1em 0;
+	}
+}
+
+/* @media screen and (min-width: 900px) {
+	.proj-container {
+		width: 33.33333%;
+	}
+} */
+
+.proj-title {
+	font-size: 45px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #fff;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	text-align: center;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-moz-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
+}
+
+#yoda-title {
+	color: #ecc94b;
+	font-family: "Russo One", sans-serif;
+	font-weight: bolder;
+}
+
+#plumm-title {
+	color: rgb(161, 127, 172);
+	font-family: "Ultra", serif;
+}
+
+#fit-title {
+	color: rgb(255, 255, 255);
+	font-family: "Trade Winds", cursive;
+}
+
+#charity-title {
+	color: rgb(130, 255, 255);
+	font-family: "Lobster", cursive;
+}
+
+.content {
+	position: relative;
+	width: 100%;
+	max-width: 400px;
+	margin: auto;
+	overflow: hidden;
+}
+
+.content .content-overlay {
+	background: #750ff7;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	opacity: 0;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-moz-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
+}
+
+.content:hover .content-overlay {
+	opacity: 1;
+}
+.content:hover .proj-title {
+	opacity: 0;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-moz-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
+}
+
+.content-image {
+	width: 100%;
+}
+
+.content-details {
+	position: absolute;
+	text-align: center;
+	padding-left: 1em;
+	padding-right: 1em;
+	width: 100%;
+	top: 50%;
+	left: 50%;
+	opacity: 0;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	-moz-transition: all 0.3s ease-in-out 0s;
+	transition: all 0.3s ease-in-out 0s;
+}
+
+.content:hover .content-details {
+	top: 50%;
+	left: 50%;
+	opacity: 1;
+}
+
+.content-details h3 {
+	color: #fff;
+	font-weight: 500;
+	letter-spacing: 0.15em;
+	margin-bottom: 0.5em;
+	text-transform: uppercase;
+}
+
+.content-details p {
+	color: #fff;
+	font-size: 1em;
+}
+
+.fadeIn-bottom {
+	top: 80%;
+}
