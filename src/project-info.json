@@ -13,7 +13,7 @@
 		"name": "plumm.it",
 		"css": "plumm-title",
 		"description": "A forum with user signup and authentication. Created using JavaScript, jQuery, Node, Express, and MySQL with Sequelize.",
-		"image": "assets/maybe-plum-360.jpg",
+		"image": "assets/plum-360.jpg",
 		"appUrl": "https://warm-plains-89008.herokuapp.com/logout",
 		"repoUrl": "https://github.com/marcustate/project-purple/"
 	},
@@ -22,7 +22,7 @@
 		"name": "Fitness Tracker",
 		"css": "fit-title",
 		"description": "Create custom workouts and graph out progress. Created using JavaScript, Node, Express, and MongoDB with Mongoose. ",
-		"image": "assets/alt-alt-fit-360.jpg",
+		"image": "assets/alt-bike-fit-360.jpg",
 		"appUrl": "https://boiling-hamlet-55992.herokuapp.com/",
 		"repoUrl": "https://github.com/tldav/fitness-tracker"
 	},

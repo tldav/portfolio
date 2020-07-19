@@ -40,12 +40,13 @@
 }
 
 #plumm-title {
-	color: rgb(161, 127, 172);
+	color: rgb(255, 255, 255);
 	font-family: "Ultra", serif;
+	font-weight: 100;
 }
 
 #fit-title {
-	color: rgb(255, 255, 255);
+	color: rgb(109, 199, 7);
 	font-family: "Trade Winds", cursive;
 }
 
