@@ -1,14 +1,13 @@
+#projects {
+	background-color: rgb(134, 70, 70);
+	display: flex;
+	flex-flow: row wrap;
+}
+
 .proj-container {
 	/* padding: 1em 0; */
-	float: left;
+	/* float: left; */
 	width: 50%;
-}
-@media screen and (max-width: 687px) {
-	.proj-container {
-		display: block;
-		width: 100%;
-		padding: 1em 0;
-	}
 }
 
 /* @media screen and (min-width: 900px) {
@@ -58,7 +57,7 @@
 .content {
 	position: relative;
 	width: 100%;
-	max-width: 400px;
+	max-width: 420px;
 	margin: auto;
 	overflow: hidden;
 }
@@ -135,4 +134,15 @@
 
 .fadeIn-bottom {
 	top: 80%;
+}
+
+@media screen and (max-width: 687px) {
+	.proj-container {
+		display: block;
+		width: 100%;
+		padding: 1em 0;
+	}
+	.content {
+		max-width: 400px;
+	}
 }

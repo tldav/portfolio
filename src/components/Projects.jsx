@@ -4,7 +4,7 @@ import projectInfo from "../project-info.json";
 
 const Projects = () => {
 	return (
-		<div className="projects">
+		<div id="projects" className="stage">
 			{projectInfo.map((project) => {
 				return (
 					<div className="proj-container">

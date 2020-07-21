@@ -12,7 +12,13 @@ body {
 	/* background-color: lightsteelblue; */
 	background-color: rgb(240, 236, 236);
 	font-family: "Montserrat", sans-serif;
+	/* font-family: "Raleway", sans-serif; */
 	line-height: 1.71429;
+}
+
+p {
+	line-height: 1.71429;
+	/* font-size: 14px; */
 }
 
 ::-webkit-scrollbar {
@@ -46,7 +52,7 @@ html {
 
 .mid {
 	max-width: 60rem;
-	padding: 0 20px;
+	/* padding: 0 20px; */
 }
 
 .me {
@@ -54,10 +60,14 @@ html {
 	max-width: 80px;
 }
 
+.stage {
+	padding: 48px;
+}
 .temp {
-	padding: 20px 0;
+	/* padding: 20px 0; */
 	background-color: rgb(134, 70, 70);
 	color: #fff;
+	padding: 48px;
 }
 
 .intro {
@@ -160,12 +170,6 @@ button:focus {
 	border: 2px solid black;
 }
 
-/* .projects img {
-	width: 383.98px;
-	height: 255.98px;
-	border-radius: 5px;
-} */
-
 @media (max-width: 768px) {
 	.left,
 	.right {
@@ -173,6 +177,9 @@ button:focus {
 	}
 	.mid {
 		width: 100%;
+	}
+	.stage {
+		padding: 24px;
 	}
 }
 

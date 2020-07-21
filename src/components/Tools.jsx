@@ -20,7 +20,7 @@ const Tools = () => {
 	});
 
 	return (
-		<div className="tools">
+		<div className="tools stage">
 			<ul>
 				<li>stuff</li>
 				<li>stuff</li>

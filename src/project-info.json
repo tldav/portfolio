@@ -19,7 +19,7 @@
 	},
 	{
 		"id": 3,
-		"name": "Fitness Tracker",
+		"name": "Workout App",
 		"css": "fit-title",
 		"description": "Create custom workouts and graph out progress. Created using JavaScript, Node, Express, and MongoDB with Mongoose. ",
 		"image": "assets/alt-bike-fit-360.jpg",

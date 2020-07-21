@@ -25,7 +25,7 @@ const Contact = () => {
 	};
 
 	return (
-		<div className="" id="contact">
+		<div className="stage" id="contact">
 			<form
 				className="contact-form"
 				onSubmit={submitForm}

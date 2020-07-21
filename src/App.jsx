@@ -15,11 +15,10 @@ const App = () => {
 				<Intro />
 				<Temp />
 				<Tools />
-				<Temp />
-				<Temp />
-				<Temp />
-				<Contact />
 				<Projects />
+				<Contact />
+				<Temp />
+				<Temp />
 			</div>
 			<div className="right">
 				<SideNav />

@@ -2,7 +2,7 @@ import React from "react";
 
 const Temp = () => {
 	return (
-		<div className="temp">
+		<div className="temp stage">
 			<p>
 				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio
 				repellat accusamus dignissimos assumenda possimus dolorum ad
