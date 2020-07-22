@@ -61,7 +61,7 @@ html {
 }
 
 .stage {
-	padding: 48px;
+	/* padding: 48px; */
 }
 .temp {
 	/* padding: 20px 0; */
@@ -129,7 +129,7 @@ html {
 .fa-icons {
 	/* background-color: maroon; */
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	flex-flow: row wrap;
 }
 
