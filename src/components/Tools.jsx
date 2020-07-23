@@ -21,6 +21,13 @@ const Tools = () => {
 
 	return (
 		<div className="tools stage">
+			<h1>Title</h1>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+				voluptate aut tenetur ea molestias at, pariatur rerum asperiores
+				reprehenderit labore deserunt vel sed optio impedit minus ipsa,
+				dignissimos facilis ut!
+			</p>
 			<ul>
 				<li>stuff</li>
 				<li>stuff</li>

@@ -8,6 +8,7 @@ const Intro = () => {
 				src="/assets/me.jpg"
 				alt="Headshot of Thomas Davis"
 			/>
+			<h1>Hello! I'm Thomas</h1>
 		</div>
 	);
 };

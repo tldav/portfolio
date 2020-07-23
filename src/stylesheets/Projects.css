@@ -1,10 +1,14 @@
 #projects {
-	background-color: rgb(134, 70, 70);
+	/* background-color: rgb(134, 70, 70); */
+	/* background-color: #fff; */
+}
+
+.proj-container {
 	display: flex;
 	flex-flow: row wrap;
 }
 
-.proj-container {
+.proj-box {
 	/* padding: 1em 0; */
 	/* float: left; */
 	width: 50%;
@@ -137,7 +141,7 @@
 }
 
 @media screen and (max-width: 687px) {
-	.proj-container {
+	.proj-box {
 		display: block;
 		width: 100%;
 		padding: 1em 0;

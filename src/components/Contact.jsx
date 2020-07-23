@@ -26,6 +26,7 @@ const Contact = () => {
 
 	return (
 		<div className="stage" id="contact">
+			<h1>Title</h1>
 			<form
 				className="contact-form"
 				onSubmit={submitForm}
