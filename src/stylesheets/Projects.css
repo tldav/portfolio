@@ -1,6 +1,7 @@
 #projects {
-	/* background-color: rgb(134, 70, 70); */
-	/* background-color: #fff; */
+	/* background-color: rgb(134, 70, 70);
+    background-color: #fff; */
+	background-color: #ecebf3;
 }
 
 .proj-container {
@@ -67,7 +68,8 @@
 }
 
 .content .content-overlay {
-	background: #750ff7;
+	/* background: #750ff7; */
+	background: black;
 	position: absolute;
 	height: 100%;
 	width: 100%;
@@ -120,8 +122,10 @@
 
 .content-details a {
 	background-color: #fff;
-	color: #750ff7;
-	font-weight: 700;
+	/* color: #750ff7; */
+	/* font-family: "Raleway", sans-serif; */
+	color: black;
+	font-weight: bolder;
 	letter-spacing: 0.15em;
 	margin-bottom: 0.5em;
 	text-transform: uppercase;

@@ -6,6 +6,7 @@ import {
 	faJs,
 	faNodeJs
 } from "@fortawesome/free-brands-svg-icons";
+import { faSquare, fas } from "@fortawesome/free-solid-svg-icons";
 
 const Tools = () => {
 	const [isDestkop, setDesktop] = useState(window.innerWidth > 500);
@@ -47,6 +48,20 @@ const Tools = () => {
 						size={isDestkop ? "6x" : "5x"}
 					/>
 				</div>
+
+				{/* <span className="fa-layers fa-fw">
+					<FontAwesomeIcon
+						icon={faSquare}
+						color={"black"}
+						size={isDestkop ? "6x" : "5x"}
+					/>
+					<FontAwesomeIcon
+						icon={faJs}
+						color={"yellow"}
+						size={isDestkop ? "6x" : "5x"}
+					/>
+				</span> */}
+
 				<div className="">
 					<FontAwesomeIcon
 						icon={faReact}

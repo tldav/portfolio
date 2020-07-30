@@ -11,10 +11,13 @@ import {
 	faMobileAlt,
 	faDirections
 } from "@fortawesome/free-solid-svg-icons";
+import Hamburger from "./Hamburger";
+// import "../stylesheets/MidNav.css";
 
-const SideNav = () => {
+const MidNav = () => {
 	return (
-		<div className="side-nav">
+		<div className="mid-nav">
+			<Hamburger />
 			<div className="nav-style">
 				<ul>
 					<li>
@@ -59,4 +62,4 @@ const SideNav = () => {
 	);
 };
 
-export default SideNav;
+export default MidNav;

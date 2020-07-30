@@ -1,6 +1,7 @@
 import React from "react";
 
 const Intro = () => {
+	const title = " <- Thomas Davis";
 	return (
 		<div className="intro stage">
 			<img
@@ -8,7 +9,7 @@ const Intro = () => {
 				src="/assets/me.jpg"
 				alt="Headshot of Thomas Davis"
 			/>
-			<h1>Hello! I'm Thomas</h1>
+			<h1>{title}</h1>
 		</div>
 	);
 };
