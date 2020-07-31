@@ -12,7 +12,11 @@ const App = () => {
 	return (
 		<div className="hamburger">
 			<HamburgerSqueeze
-				style={{ padding: "0" }}
+				style={{
+					padding: "12px",
+					marginTop: "80px",
+					paddingBottom: "5px"
+				}}
 				buttonWidth={30}
 				buttonColor="#f0ecec"
 				barColor="black"
