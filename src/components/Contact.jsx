@@ -4,7 +4,6 @@ import { faTelegramPlane } from "@fortawesome/free-brands-svg-icons";
 
 const Contact = () => {
 	const [status, setStatus] = useState("");
-
 	const submitForm = (ev) => {
 		ev.preventDefault();
 		const form = ev.target;
@@ -23,10 +22,9 @@ const Contact = () => {
 		};
 		xhr.send(data);
 	};
-
 	return (
 		<div className="stage" id="contact">
-			<h1>Title</h1>
+			<h1>Contact Me</h1>
 			<form
 				className="contact-form"
 				onSubmit={submitForm}
@@ -40,7 +38,6 @@ const Contact = () => {
 					onFocus={(e) => (e.target.placeholder = "")}
 					onBlur={(e) => (e.target.placeholder = "Name")}
 				/>
-
 				<input
 					type="email"
 					name="email"
@@ -48,7 +45,6 @@ const Contact = () => {
 					onFocus={(e) => (e.target.placeholder = "")}
 					onBlur={(e) => (e.target.placeholder = "Email")}
 				/>
-
 				<textarea
 					rows="4"
 					type="text"
@@ -57,9 +53,8 @@ const Contact = () => {
 					onFocus={(e) => (e.target.placeholder = "")}
 					onBlur={(e) => (e.target.placeholder = "Message")}
 				/>
-
 				{status === "SUCCESS" ? (
-					<p>Thanks!</p>
+					<p className="success">Thanks!</p>
 				) : (
 					<button className="send-button">
 						{" "}
@@ -70,12 +65,11 @@ const Contact = () => {
 						/>
 					</button>
 				)}
-				{status === "ERROR" && <p>Ooops! There was an error.</p>}
+				{status === "ERROR" && (
+					<p className="error">Please fill in all the fields.</p>
+				)}
 			</form>
 		</div>
 	);
 };
-
 export default Contact;
-
-// className="ui form"
