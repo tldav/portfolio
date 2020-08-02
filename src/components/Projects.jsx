@@ -5,12 +5,12 @@ import projectInfo from "../project-info.json";
 const Projects = () => {
 	return (
 		<div id="projects" className="stage">
-			<h1>Some </h1>
+			<h1>Some Garbo Apps</h1>
 			<p>Here are a few things I've worked on recently.</p>
 			<div className="proj-container">
 				{projectInfo.map((project) => {
 					return (
-						<div className="proj-box">
+						<div className="proj-box" key={project.name}>
 							<div className="content">
 								<div className="content-overlay"></div>
 								<img

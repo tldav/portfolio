@@ -17,11 +17,11 @@ import Hamburger from "./Hamburger";
 const MidNav = () => {
 	const [open, setOpen] = useState(false);
 
-	// const navToggle = () => {
-	// 	setOpen(true);
-	// };
+	const navToggle = () => {
+		setOpen(true);
+	};
 
-	const navToggle = useCallback(() => setOpen((prevState) => !prevState), []);
+	// const navToggle = useCallback(() => setOpen((prevState) => !prevState), []);
 
 	const hide = "nav-style hide";
 	const show = "nav-style";

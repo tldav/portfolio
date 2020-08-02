@@ -1,7 +1,7 @@
 import React, { useState, useCallback } from "react";
 import { HamburgerSqueeze } from "react-animated-burgers";
 
-const App = () => {
+const Hamburger = () => {
 	const [isActive, setIsActive] = useState(false);
 
 	const toggleButton = useCallback(
@@ -26,4 +26,4 @@ const App = () => {
 	);
 };
 
-export default App;
+export default Hamburger;

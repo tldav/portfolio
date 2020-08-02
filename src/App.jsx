@@ -1,13 +1,16 @@
 import React from "react";
-import Intro from "./components/Intro";
-import Temp from "./components/Temp";
-import SideNav from "./components/SideNav";
-import MidNav from "./components/MidNav";
-import Contact from "./components/Contact";
-import Tools from "./components/Tools";
-import Projects from "./components/Projects";
-import Hamburger from "./components/Hamburger";
 import "./stylesheets/App.css";
+import {
+	Intro,
+	Temp,
+	SideNav,
+	MidNav,
+	Contact,
+	Tools,
+	Projects,
+	Hamburger,
+	Menu
+} from "./components";
 
 const App = () => {
 	return (
@@ -15,8 +18,6 @@ const App = () => {
 			<div className="left"></div>
 			<div className="mid">
 				<MidNav />
-				<Hamburger className="hamburger" />
-
 				<Intro />
 				<Temp />
 				<Tools />
