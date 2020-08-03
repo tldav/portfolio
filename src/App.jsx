@@ -8,8 +8,7 @@ import {
 	Contact,
 	Tools,
 	Projects,
-	Hamburger,
-	Menu
+	Hamburger
 } from "./components";
 
 const App = () => {
