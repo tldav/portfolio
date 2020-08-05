@@ -6,3 +6,5 @@ export { default as Contact } from "./Contact";
 export { default as Tools } from "./Tools";
 export { default as Projects } from "./Projects";
 export { default as Hamburger } from "./Hamburger";
+export { default as Burger } from "./Burger";
+export { default as Menu } from "./Menu";

@@ -66,7 +66,7 @@ const Contact = () => {
 					</button>
 				)}
 				{status === "ERROR" && (
-					<p className="error">Please fill in all the fields.</p>
+					<p className="error">Email is required.</p>
 				)}
 			</form>
 		</div>
