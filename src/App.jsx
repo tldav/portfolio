@@ -15,7 +15,8 @@ import {
 	Projects,
 	Burger,
 	Menu,
-	Hamburger
+	Hamburger,
+	SmallNav
 } from "./components";
 
 const App = () => {
@@ -27,13 +28,12 @@ const App = () => {
 
 	return (
 		<ThemeProvider theme={theme}>
-			{/* <GlobalStyles /> */}
 			<div className="app-container ">
-				<div className="left">
-					{/* <SideNav /> */}
+				<div className="left"></div>
+				<div className="mid">
 					{/* <div ref={node}>
 						<FocusLock disabled={!open}>
-							<Burger
+							<Hamburger
 								open={open}
 								setOpen={setOpen}
 								aria-controls={menuId}
@@ -41,21 +41,8 @@ const App = () => {
 							<Menu open={open} setOpen={setOpen} id={menuId} />
 						</FocusLock>
 					</div> */}
-				</div>
-				<div className="mid">
-					<div ref={node}>
-						<FocusLock disabled={!open}>
-							<Burger
-								open={open}
-								setOpen={setOpen}
-								aria-controls={menuId}
-							/>
-							<Menu open={open} setOpen={setOpen} id={menuId} />
-						</FocusLock>
-					</div>
-					{/* <MidNav /> */}
+					<SmallNav />
 					<Intro />
-					<Hamburger />
 					<Temp />
 					<Tools />
 					<Projects />
@@ -71,3 +58,5 @@ const App = () => {
 };
 
 export default App;
+
+// burger section is 44 px            nav padding is 32px

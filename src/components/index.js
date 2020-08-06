@@ -8,3 +8,4 @@ export { default as Projects } from "./Projects";
 export { default as Hamburger } from "./Hamburger";
 export { default as Burger } from "./Burger";
 export { default as Menu } from "./Menu";
+export { default as SmallNav } from "./SmallNav";

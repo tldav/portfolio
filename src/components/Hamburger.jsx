@@ -1,7 +1,8 @@
 import React, { useState, useCallback } from "react";
 import { HamburgerSqueeze } from "react-animated-burgers";
 
-const Hamburger = () => {
+const Hamburger = ({ open, setOpen, ...props }) => {
+	const isExpanded = open ? true : false;
 	const [isActive, setIsActive] = useState(false);
 
 	const toggleButton = useCallback(
@@ -12,13 +13,17 @@ const Hamburger = () => {
 	return (
 		<div className="hamburger">
 			<HamburgerSqueeze
+				aria-label="Toggle menu"
+				aria-expanded={isExpanded}
+				open={open}
+				onClick={() => setOpen(!open)}
+				{...props}
 				style={{
 					padding: "12px",
-					marginTop: "80px",
 					paddingBottom: "5px"
 				}}
 				buttonWidth={30}
-				buttonColor="#f0ecec"
+				buttonColor="#EFFFFA"
 				barColor="black"
 				{...{ isActive, toggleButton }}
 			/>

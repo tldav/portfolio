@@ -7,29 +7,33 @@ import { HamburgerSqueeze } from "react-animated-burgers";
 const Burger = ({ open, setOpen, ...props }) => {
 	const isExpanded = open ? true : false;
 
-	const [isActive, setIsActive] = useState(false);
+	// const [isActive, setIsActive] = useState(false);
 
-	const toggleButton = useCallback(
-		() => setIsActive((prevState) => !prevState),
-		[]
-	);
+	// const toggleButton = useCallback(
+	// 	() => setIsActive((prevState) => !prevState),
+	// 	[]
+	// );
+
 	return (
-		// <HamburgerSqueeze
-		// 	aria-label="Toggle menu"
-		// 	aria-expanded={isExpanded}
-		// 	open={open}
-		// 	onClick={() => setOpen(!open)}
-		// 	{...props}
-		// 	style={{
-		// 		padding: "12px",
-		// 		zIndex: "10",
-		// 		paddingBottom: "5px"
-		// 	}}
-		// 	buttonWidth={30}
-		// 	buttonColor="#f0ecec"
-		// 	barColor="black"
-		// 	{...{ isActive, toggleButton }}
-		// />
+		// <div className="hamburger">
+		// 	<HamburgerSqueeze
+		// 		aria-label="Toggle menu"
+		// 		aria-expanded={isExpanded}
+		// 		open={open}
+		// 		onClick={() => setOpen(!open)}
+		// 		{...props}
+		// 		style={{
+		// 			padding: "12px",
+		// 			zIndex: "10",
+		// 			paddingBottom: "5px"
+		// 		}}
+		// 		buttonWidth={30}
+		// 		buttonColor="#f0ecec"
+		// 		barColor="black"
+		// 		{...{ isActive, toggleButton }}
+		// 	/>
+		// </div>
+
 		<StyledBurger
 			aria-label="Toggle menu"
 			aria-expanded={isExpanded}
