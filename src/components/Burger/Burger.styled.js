@@ -1,9 +1,7 @@
 import styled from "styled-components";
 
 export const StyledBurger = styled.button`
-	position: absolute;
-	top: 5%;
-	left: 2rem;
+	position: fixed;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
@@ -13,6 +11,7 @@ export const StyledBurger = styled.button`
 	border: none;
 	cursor: pointer;
 	padding: 0;
+	margin: 0;
 	z-index: 10;
 
 	span {
@@ -21,9 +20,9 @@ export const StyledBurger = styled.button`
 		background: ${({ theme, open }) =>
 			open ? theme.primaryDark : theme.primaryDark};
 		border-radius: 10px;
-		transition: all 0.3s linear;
+		transition: all 0.17s linear;
 		position: relative;
-		transform-origin: 1px;
+		transform-origin: 0px;
 
 		:first-child {
 			transform: ${({ open }) => (open ? "rotate(45deg)" : "rotate(0)")};

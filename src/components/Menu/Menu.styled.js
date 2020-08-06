@@ -8,21 +8,21 @@ export const StyledMenu = styled.nav`
 	transform: ${({ open }) => (open ? "translateX(0)" : "translateX(-101%)")};
 	text-align: center;
 	padding: 2rem;
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
+	z-index: 9;
 
 	transition: transform 0.3s ease-in-out;
 
-	@media (max-width: ${({ theme }) => theme.large}) {
+	@media (max-width: ${({ theme }) => theme.mobile}) {
 		width: 100%;
 		transform: ${({ open }) =>
 			open ? "translateY(0)" : "translateY(-101%)"};
 	}
 
 	a {
-		@media (max-width: ${({ theme }) => theme.large}) {
-			font-size: 1.5rem;
+		@media (max-width: ${({ theme }) => theme.mobile}) {
 			text-align: center;
 		}
 
@@ -32,4 +32,4 @@ export const StyledMenu = styled.nav`
 	}
 `;
 
-// translateY was -101% then -120%, then -101 again.
+// translateY was -101% then -120%, then -101 again. prime - position was originally absolute

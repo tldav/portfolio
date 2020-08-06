@@ -14,7 +14,8 @@ import {
 	Tools,
 	Projects,
 	Burger,
-	Menu
+	Menu,
+	Hamburger
 } from "./components";
 
 const App = () => {
@@ -54,6 +55,7 @@ const App = () => {
 					</div>
 					{/* <MidNav /> */}
 					<Intro />
+					<Hamburger />
 					<Temp />
 					<Tools />
 					<Projects />

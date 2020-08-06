@@ -16,7 +16,10 @@ body {
 }
 p {
 	line-height: 1.71429;
-	/* font-size: 14px; */
+	font-size: 14px;
+}
+h1 {
+	font-size: 28px;
 }
 ::-webkit-scrollbar {
 	width: 10px;
@@ -42,7 +45,9 @@ html {
 	justify-content: center;
 }
 .mid {
-	max-width: 60rem;
+	max-width: 840px;
+	/* max-width: 60rem;
+	max-width: 55rem; */
 	/* padding: 0 20px; */
 }
 
