@@ -4,7 +4,7 @@ import FocusLock from "react-focus-lock";
 import Menu from "./Menu";
 import { useOnClickOutside } from "../hooks";
 
-const SmallNav = () => {
+const SmallNav = ({ sticky }) => {
 	const [open, setOpen] = useState(false);
 	const node = useRef();
 	const menuId = "main-menu";
@@ -12,7 +12,8 @@ const SmallNav = () => {
 	useOnClickOutside(node, () => setOpen(false));
 
 	return (
-		<div className="small-nav">
+		// <nav className="small-nav">
+		<nav className={sticky ? "small-nav small-nav-sticky" : "small-nav"}>
 			<div ref={node}>
 				<FocusLock disabled={!open}>
 					<Hamburger
@@ -23,7 +24,7 @@ const SmallNav = () => {
 					<Menu open={open} setOpen={setOpen} id={menuId} />
 				</FocusLock>
 			</div>
-		</div>
+		</nav>
 	);
 };
 

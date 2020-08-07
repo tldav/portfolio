@@ -78,19 +78,45 @@ html {
 	/* background-color: #ECEBF3; */
 }
 
-.small-nav {
+/* THIS WAS ORIGINAL GO BACK TO THIS IF THE SCROLL EFFECT DOES NOT WORK  */
+/* .small-nav {
 	position: fixed;
 	background-color: #effffa;
 	display: flex;
 	width: 840px;
 	z-index: 10;
+} */
+
+.small-nav {
+	position: absolute;
+	background-color: #effffa;
+	display: flex;
+	width: 100%;
+	max-width: 840px;
+	z-index: 10;
+}
+
+.small-nav-sticky {
+	position: fixed;
+	animation: moveDown 0.5s ease-in-out;
+	box-shadow: 0 2px 10px -10px;
+}
+
+@keyframes moveDown {
+	from {
+		transform: translateY(-5rem);
+	}
+	to {
+		transform: translateY(0rem);
+	}
 }
 
 .hamburger {
-	display: block;
+	/* display: block; */
 	background-color: white;
 	z-index: 100;
 }
+
 .hamburger button:visited {
 	background-color: greenyellow;
 }
@@ -225,7 +251,7 @@ button:focus {
 	}
 }
 @media (min-width: 1155px) {
-	.mid-nav {
+	.small-nav {
 		display: none;
 	}
 }

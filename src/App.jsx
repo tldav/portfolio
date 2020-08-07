@@ -4,7 +4,7 @@ import "./stylesheets/App.css";
 import { ThemeProvider } from "styled-components";
 import { useOnClickOutside } from "./hooks";
 import { theme } from "./theme";
-import { GlobalStyles } from "./global";
+import useSticky from "./useSticky.js";
 import {
 	Intro,
 	Temp,
@@ -24,6 +24,8 @@ const App = () => {
 	const node = useRef();
 	const menuId = "main-menu";
 
+	const { isSticky, element } = useSticky();
+
 	useOnClickOutside(node, () => setOpen(false));
 
 	return (
@@ -41,10 +43,10 @@ const App = () => {
 							<Menu open={open} setOpen={setOpen} id={menuId} />
 						</FocusLock>
 					</div> */}
-					<SmallNav />
+					<SmallNav sticky={isSticky} />
 					<Intro />
 					<Temp />
-					<Tools />
+					<Tools element={element} />
 					<Projects />
 					<Contact />
 					<Temp />

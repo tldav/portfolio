@@ -8,7 +8,7 @@ export const StyledMenu = styled.nav`
 	transform: ${({ open }) => (open ? "translateX(0)" : "translateX(-101%)")};
 	text-align: center;
 	padding: 2rem;
-	position: fixed;
+	position: absolute;
 	top: 0;
 	left: 0;
 	z-index: -1;

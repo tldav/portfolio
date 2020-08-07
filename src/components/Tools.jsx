@@ -8,7 +8,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faSquare, fas } from "@fortawesome/free-solid-svg-icons";
 
-const Tools = () => {
+const Tools = ({ element }) => {
 	const [isDestkop, setDesktop] = useState(window.innerWidth > 500);
 
 	const updateMedia = () => {
@@ -22,34 +22,35 @@ const Tools = () => {
 
 	return (
 		<div className="tools stage">
-			<h1>Title</h1>
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
-				voluptate aut tenetur ea molestias at, pariatur rerum asperiores
-				reprehenderit labore deserunt vel sed optio impedit minus ipsa,
-				dignissimos facilis ut!
-			</p>
-			<ul>
-				<li>stuff</li>
-				<li>stuff</li>
-				<li>stuff</li>
-				<li>stuff</li>
-				<li>stuff</li>
-				<li>stuff</li>
-				<li>stuff</li>
-				<li>stuff</li>
-				<li>stuff</li>
-			</ul>
-			<div className="fa-icons">
-				<div className="">
-					<FontAwesomeIcon
-						icon={faJs}
-						className="js-icon"
-						size={isDestkop ? "6x" : "5x"}
-					/>
-				</div>
+			<div ref={element}>
+				<h1>Title</h1>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					Quasi voluptate aut tenetur ea molestias at, pariatur rerum
+					asperiores reprehenderit labore deserunt vel sed optio
+					impedit minus ipsa, dignissimos facilis ut!
+				</p>
+				<ul>
+					<li>stuff</li>
+					<li>stuff</li>
+					<li>stuff</li>
+					<li>stuff</li>
+					<li>stuff</li>
+					<li>stuff</li>
+					<li>stuff</li>
+					<li>stuff</li>
+					<li>stuff</li>
+				</ul>
+				<div className="fa-icons">
+					<div className="">
+						<FontAwesomeIcon
+							icon={faJs}
+							className="js-icon"
+							size={isDestkop ? "6x" : "5x"}
+						/>
+					</div>
 
-				{/* <span className="fa-layers fa-fw">
+					{/* <span className="fa-layers fa-fw">
 					<FontAwesomeIcon
 						icon={faSquare}
 						color={"black"}
@@ -62,26 +63,27 @@ const Tools = () => {
 					/>
 				</span> */}
 
-				<div className="">
-					<FontAwesomeIcon
-						icon={faReact}
-						className="react-icon"
-						size={isDestkop ? "6x" : "5x"}
-					/>
-				</div>
-				<div className="">
-					<FontAwesomeIcon
-						icon={faNodeJs}
-						className="node-icon"
-						size={isDestkop ? "6x" : "5x"}
-					/>
-				</div>
-				<div className="">
-					<FontAwesomeIcon
-						icon={faGitAlt}
-						className="git-icon"
-						size={isDestkop ? "6x" : "5x"}
-					/>
+					<div className="">
+						<FontAwesomeIcon
+							icon={faReact}
+							className="react-icon"
+							size={isDestkop ? "6x" : "5x"}
+						/>
+					</div>
+					<div className="">
+						<FontAwesomeIcon
+							icon={faNodeJs}
+							className="node-icon"
+							size={isDestkop ? "6x" : "5x"}
+						/>
+					</div>
+					<div className="">
+						<FontAwesomeIcon
+							icon={faGitAlt}
+							className="git-icon"
+							size={isDestkop ? "6x" : "5x"}
+						/>
+					</div>
 				</div>
 			</div>
 		</div>
