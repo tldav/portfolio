@@ -10,8 +10,9 @@ export const StyledBurger = styled.button`
 	background: transparent;
 	border: none;
 	cursor: pointer;
-	padding: 0;
-	margin: 0;
+	padding: 2.5px 0;
+	margin: 10px 0 0 10px;
+
 	z-index: 10;
 
 	span {
@@ -22,7 +23,7 @@ export const StyledBurger = styled.button`
 		border-radius: 10px;
 		transition: all 0.17s linear;
 		position: relative;
-		transform-origin: 0px;
+		transform-origin: 2px;
 
 		:first-child {
 			transform: ${({ open }) => (open ? "rotate(45deg)" : "rotate(0)")};

@@ -12,7 +12,6 @@ const SmallNav = ({ sticky }) => {
 	useOnClickOutside(node, () => setOpen(false));
 
 	return (
-		// <nav className="small-nav">
 		<nav className={sticky ? "small-nav small-nav-sticky" : "small-nav"}>
 			<div ref={node}>
 				<FocusLock disabled={!open}>
@@ -20,6 +19,7 @@ const SmallNav = ({ sticky }) => {
 						open={open}
 						setOpen={setOpen}
 						aria-controls={menuId}
+						buttonColor={"#EFFFFA"}
 					/>
 					<Menu open={open} setOpen={setOpen} id={menuId} />
 				</FocusLock>

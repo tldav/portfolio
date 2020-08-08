@@ -43,6 +43,7 @@ const App = () => {
 							<Menu open={open} setOpen={setOpen} id={menuId} />
 						</FocusLock>
 					</div> */}
+					<MidNav />
 					<SmallNav sticky={isSticky} />
 					<Intro />
 					<Temp />
