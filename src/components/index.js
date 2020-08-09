@@ -9,3 +9,5 @@ export { default as Hamburger } from "./Hamburger";
 export { default as Burger } from "./Burger";
 export { default as Menu } from "./Menu";
 export { default as SmallNav } from "./SmallNav";
+export { default as NavList } from "./NavList";
+export { default as Footer } from "./Footer";

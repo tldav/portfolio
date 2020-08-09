@@ -11,6 +11,7 @@ export const StyledMenu = styled.nav`
 	position: fixed;
 	top: 0;
 	left: 0;
+	box-shadow: rgba(172, 172, 172, 0.5) 0px 1px 3px 0px;
 
 	transition: transform 0.3s ease-in-out;
 

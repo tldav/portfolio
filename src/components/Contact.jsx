@@ -23,7 +23,7 @@ const Contact = () => {
 		xhr.send(data);
 	};
 	return (
-		<div className="stage" id="contact">
+		<div className="stage dark" id="contact">
 			<h1>Contact Me</h1>
 			<form
 				className="contact-form"
@@ -31,6 +31,7 @@ const Contact = () => {
 				action="https://formspree.io/xleppyja"
 				method="POST"
 			>
+				<label htmlFor="name">Name</label>
 				<input
 					type="text"
 					name="name"
@@ -38,6 +39,8 @@ const Contact = () => {
 					onFocus={(e) => (e.target.placeholder = "")}
 					onBlur={(e) => (e.target.placeholder = "Name")}
 				/>
+				<label htmlFor="email">Email</label>
+
 				<input
 					type="email"
 					name="email"
@@ -45,6 +48,8 @@ const Contact = () => {
 					onFocus={(e) => (e.target.placeholder = "")}
 					onBlur={(e) => (e.target.placeholder = "Email")}
 				/>
+				<label htmlFor="message">Message</label>
+
 				<textarea
 					rows="4"
 					type="text"

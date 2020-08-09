@@ -33,6 +33,6 @@
 		"description": "Manage non-profit organizations to partner with your business. Created using React, Material-UI, Framer Motion, Charity Navigator API, Node, Express, bcrypt, and MongoDB with Mongoose. See README for test login credentials.",
 		"image": "assets/charity-420-278.jpg",
 		"appUrl": "https://charity-wowness.herokuapp.com/",
-		"repoUrl": "https://github.com/tldav/charity-tracker"
+		"repoUrl": "https://github.com/ThomasJasonM1/charity-tracker"
 	}
 ]

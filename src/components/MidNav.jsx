@@ -1,5 +1,4 @@
 import React, { useState, useRef } from "react";
-import Hamburger from "./Hamburger";
 import FocusLock from "react-focus-lock";
 import Menu from "./Menu";
 import Burger from "./Burger";
@@ -20,7 +19,6 @@ const MidNav = () => {
 						open={open}
 						setOpen={setOpen}
 						aria-controls={menuId}
-						buttonColor="transparent"
 					/>
 					<Menu open={open} setOpen={setOpen} id={menuId} />
 				</FocusLock>

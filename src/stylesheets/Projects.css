@@ -1,7 +1,8 @@
 #projects {
 	/* background-color: rgb(134, 70, 70);
     background-color: #fff; */
-	background-color: #ecebf3;
+	/* background-color: #7072183f; */
+	/* background-color: #ecebf3; */
 }
 
 .proj-container {
@@ -14,12 +15,6 @@
 	/* float: left; */
 	width: 50%;
 }
-
-/* @media screen and (min-width: 900px) {
-	.proj-container {
-		width: 33.33333%;
-	}
-} */
 
 .proj-title {
 	font-size: 45px;
@@ -35,6 +30,12 @@
 	-webkit-transition: all 0.4s ease-in-out 0s;
 	-moz-transition: all 0.4s ease-in-out 0s;
 	transition: all 0.4s ease-in-out 0s;
+}
+
+@media (max-width: 357px) {
+	.proj-title {
+		font-size: 38px;
+	}
 }
 
 #yoda-title {
@@ -68,8 +69,9 @@
 }
 
 .content .content-overlay {
-	/* background: #750ff7; */
-	background: black;
+	background-color: #750ff7;
+	/* background-color: rgb(36, 36, 36); */
+	/* background-color: black; */
 	position: absolute;
 	height: 100%;
 	width: 100%;
@@ -136,7 +138,7 @@
 }
 
 .content-details p {
-	color: #fff;
+	color: #effffa;
 	font-size: 1em;
 }
 
@@ -144,7 +146,7 @@
 	top: 80%;
 }
 
-@media screen and (max-width: 687px) {
+@media screen and (max-width: 825px) {
 	.proj-box {
 		display: block;
 		width: 100%;

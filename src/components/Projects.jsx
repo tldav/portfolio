@@ -16,6 +16,7 @@ const Projects = () => {
 								<img
 									className="content-image"
 									src={project.image}
+									alt={project.name}
 								/>
 								<h1 className="proj-title" id={project.css}>
 									{project.name}
@@ -24,8 +25,20 @@ const Projects = () => {
 									<p className="content-text">
 										{project.description}
 									</p>
-									<a href={project.appUrl}>App</a>
-									<a href={project.repoUrl}>Code</a>
+									<a
+										href={project.appUrl}
+										target="_blank"
+										rel="noopener noreferrer"
+									>
+										App
+									</a>
+									<a
+										href={project.repoUrl}
+										target="_blank"
+										rel="noopener noreferrer"
+									>
+										Code
+									</a>
 								</div>
 							</div>
 						</div>

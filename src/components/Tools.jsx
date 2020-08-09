@@ -6,13 +6,12 @@ import {
 	faJs,
 	faNodeJs
 } from "@fortawesome/free-brands-svg-icons";
-import { faSquare, fas } from "@fortawesome/free-solid-svg-icons";
 
 const Tools = ({ element }) => {
-	const [isDestkop, setDesktop] = useState(window.innerWidth > 500);
+	const [isDestkop, setDesktop] = useState(window.innerWidth > 360);
 
 	const updateMedia = () => {
-		setDesktop(window.innerWidth > 500);
+		setDesktop(window.innerWidth > 360);
 	};
 
 	useEffect(() => {
@@ -20,70 +19,77 @@ const Tools = ({ element }) => {
 		return () => window.removeEventListener("resize", updateMedia);
 	});
 
+	const renderToolsList = () => {
+		if (isDestkop) {
+			return (
+				<div className="tools-list">
+					<ul>
+						<li>JavaScript</li>
+						<li>React</li>
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>Bootstrap</li>
+					</ul>
+					<ul>
+						<li>Express</li>
+						<li>Node</li>
+						<li>MySQL</li>
+						<li>MongoDB</li>
+						<li>Rest APi</li>
+					</ul>
+					<ul>
+						<li>Git</li>
+						<li>Jest</li>
+						<li>Material-UI</li>
+						<li>stuff</li>
+						<li>stuff</li>
+					</ul>
+				</div>
+			);
+		}
+		return (
+			<p className="tools-p">
+				JavaScript React HTML CSS Bootstrap Express Node MySQL MongoDB
+				Rest API Git Jest Material-UI stuff stuff
+			</p>
+		);
+	};
+
 	return (
-		<div className="tools stage">
+		<div className="tools stage dark">
 			<div ref={element}>
-				<h1>Title</h1>
+				<h1>Tools</h1>
 				<p>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit.
 					Quasi voluptate aut tenetur ea molestias at, pariatur rerum
 					asperiores reprehenderit labore deserunt vel sed optio
 					impedit minus ipsa, dignissimos facilis ut!
 				</p>
-				<ul>
-					<li>stuff</li>
-					<li>stuff</li>
-					<li>stuff</li>
-					<li>stuff</li>
-					<li>stuff</li>
-					<li>stuff</li>
-					<li>stuff</li>
-					<li>stuff</li>
-					<li>stuff</li>
-				</ul>
+				{renderToolsList()}
 				<div className="fa-icons">
-					<div className="">
-						<FontAwesomeIcon
-							icon={faJs}
-							className="js-icon"
-							size={isDestkop ? "6x" : "5x"}
-						/>
-					</div>
-
-					{/* <span className="fa-layers fa-fw">
-					<FontAwesomeIcon
-						icon={faSquare}
-						color={"black"}
-						size={isDestkop ? "6x" : "5x"}
-					/>
 					<FontAwesomeIcon
 						icon={faJs}
-						color={"yellow"}
-						size={isDestkop ? "6x" : "5x"}
+						className="js-icon"
+						// size={isDestkop ? "6x" : "4x"}
 					/>
-				</span> */}
 
-					<div className="">
-						<FontAwesomeIcon
-							icon={faReact}
-							className="react-icon"
-							size={isDestkop ? "6x" : "5x"}
-						/>
-					</div>
-					<div className="">
-						<FontAwesomeIcon
-							icon={faNodeJs}
-							className="node-icon"
-							size={isDestkop ? "6x" : "5x"}
-						/>
-					</div>
-					<div className="">
-						<FontAwesomeIcon
-							icon={faGitAlt}
-							className="git-icon"
-							size={isDestkop ? "6x" : "5x"}
-						/>
-					</div>
+					<FontAwesomeIcon
+						icon={faReact}
+						className="react-icon"
+						// size={isDestkop ? "6x" : "5x"}
+					/>
+
+					<FontAwesomeIcon
+						icon={faNodeJs}
+						className="node-icon"
+						// size={isDestkop ? "6x" : "5x"}
+					/>
+
+					<FontAwesomeIcon
+						icon={faGitAlt}
+						className="git-icon"
+						// size={isDestkop ? "6x" : "5x"}
+					/>
 				</div>
 			</div>
 		</div>
