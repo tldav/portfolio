@@ -6,7 +6,8 @@ const Footer = () => {
 	return (
 		<div className="footer stage">
 			<FontAwesomeIcon icon={faCopyright} /> Thomas Davis 2020 because
-			everyone puts this.{" "}
+			everyone puts this here but who the fuck actually files for a
+			copyright? Nobody. The answer is nobody.{" "}
 		</div>
 	);
 };
