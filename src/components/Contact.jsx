@@ -31,26 +31,29 @@ const Contact = () => {
 				action="https://formspree.io/xleppyja"
 				method="POST"
 			>
-				<label htmlFor="name">Name</label>
+				{/* <label htmlFor="name">Name</label> */}
 				<input
+					className="input-style"
 					type="text"
 					name="name"
 					placeholder="Name"
 					onFocus={(e) => (e.target.placeholder = "")}
 					onBlur={(e) => (e.target.placeholder = "Name")}
 				/>
-				<label htmlFor="email">Email</label>
+				{/* <label htmlFor="email">Email</label> */}
 
 				<input
+					className="input-style"
 					type="email"
 					name="email"
 					placeholder="Email"
 					onFocus={(e) => (e.target.placeholder = "")}
 					onBlur={(e) => (e.target.placeholder = "Email")}
 				/>
-				<label htmlFor="message">Message</label>
+				{/* <label htmlFor="message">Message</label> */}
 
 				<textarea
+					className="input-style"
 					rows="4"
 					type="text"
 					name="message"

@@ -10,7 +10,7 @@
 body {
 	/* background-color: #f0ecec; */
 	background-color: #effffa;
-	font-family: "Montserrat", sans-serif;
+	font-family: "Montserrat", Arial, Helvetica, sans-serif;
 	/* font-family: "Raleway", sans-serif; */
 	line-height: 1.71429;
 }
@@ -190,12 +190,6 @@ html {
 	flex-flow: row wrap;
 }
 
-.tools-list ul {
-	/* list-style: none;
-	padding: 0;
-	margin: 0; */
-}
-
 @media (max-width: 480px) {
 	.tools-list {
 		justify-content: space-between;
@@ -208,7 +202,7 @@ html {
 	/* background-color: rgb(53, 53, 53);
 	color: white; */
 }
-.contact-form {
+/* .contact-form {
 	display: flex;
 	flex-flow: column;
 }
@@ -225,6 +219,7 @@ button {
 textarea:focus,
 button:focus {
 	outline: none;
+	box-shadow: #750ff7 0px 1px 3px 0px;
 }
 .send-icon {
 	background-color: none;
@@ -244,7 +239,7 @@ button:focus {
 }
 .send-button:hover {
 	background-color: #3c0a7e;
-}
+} */
 .success {
 	color: rgb(50, 218, 50);
 	font-size: 18px;
@@ -302,4 +297,58 @@ button:focus {
 	}
 }
 
-/* off-white color EFFFFA */
+/**************************************************************/
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400);
+
+form {
+	max-width: 420px;
+	/* margin: 50px auto; */
+}
+
+.input-style {
+	color: black;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	border-radius: 5px;
+	line-height: 22px;
+	background-color: #effffa;
+	border: 3px solid #750ff7;
+	transition: all 0.3s;
+	padding: 13px;
+	margin-bottom: 15px;
+	width: 100%;
+	box-sizing: border-box;
+	outline: 0;
+}
+
+.input-style:focus {
+	border: 3px solid #b848ec;
+}
+
+textarea {
+	height: 150px;
+	line-height: 150%;
+	resize: vertical;
+}
+
+.send-button {
+	font-family: "Montserrat", Arial, Helvetica, sans-serif;
+	width: 100%;
+	background: #750ff7;
+	border-radius: 5px;
+	border: 0;
+	cursor: pointer;
+	color: white;
+	font-size: 24px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	transition: all 0.3s;
+	margin-top: -4px;
+	font-weight: 700;
+}
+.send-button:hover {
+	background: #6a509b;
+}
+
+/* button hover ??   ad6eff */
