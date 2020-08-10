@@ -66,7 +66,7 @@ const Tools = ({ element }) => {
 					impedit minus ipsa, dignissimos facilis ut!
 				</p>
 				{renderToolsList()}
-				<div className="fa-icons">
+				<div className="tools-icons">
 					<FontAwesomeIcon
 						icon={faJs}
 						className="js-icon"
