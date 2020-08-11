@@ -109,7 +109,7 @@ html {
 	}
 }
 
-.hamburger {
+/* .hamburger {
 	background-color: #effffa;
 	z-index: 100;
 	border: none;
@@ -118,7 +118,7 @@ html {
 .hamburger button:focus {
 	box-shadow: inset 0 0 0 black, 0 0 3px 1px #750ff7;
 	box-shadow: #750ff7 0px 1px 3px 0px;
-}
+} */
 
 /* Negative 170 will be used if i decide to use the left navbar instead of the right.  */
 .side-nav {
@@ -150,6 +150,27 @@ html {
 }
 .nav-style a:hover ~ .pap {
 	color: #750ff7;
+}
+
+.small-nav button:focus,
+.mid-nav button:focus {
+	outline: none;
+}
+
+.hamburger-button {
+	border-radius: 5px;
+	background-color: #effffa;
+	border: none;
+}
+
+.mid-nav button {
+	position: fixed;
+	width: 40px;
+}
+
+.small-nav button {
+	z-index: 100;
+	margin: 5px;
 }
 
 /* TOOLS SECTION  */
@@ -188,13 +209,13 @@ html {
 	margin-top: 30px;
 }
 @media (max-width: 478px) {
-	.fa-icons {
+	.tools-icons {
 		justify-content: space-between;
 		font-size: 70px;
 	}
 }
 @media (max-width: 347px) {
-	.fa-icons {
+	.tools-icons {
 		font-size: 60px;
 	}
 }

@@ -16,6 +16,7 @@ const MidNav = () => {
 			<div ref={node}>
 				<FocusLock disabled={!open}>
 					<Burger
+						className="hamburger-button"
 						open={open}
 						setOpen={setOpen}
 						aria-controls={menuId}

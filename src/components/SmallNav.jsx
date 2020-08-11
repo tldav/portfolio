@@ -1,5 +1,6 @@
 import React, { useState, useRef } from "react";
 import Hamburger from "./Hamburger";
+import Burger from "./Burger";
 import FocusLock from "react-focus-lock";
 import Menu from "./Menu";
 import { useOnClickOutside } from "../hooks";
@@ -15,7 +16,8 @@ const SmallNav = ({ sticky }) => {
 		<nav className={sticky ? "small-nav small-nav-sticky" : "small-nav"}>
 			<div ref={node}>
 				<FocusLock disabled={!open}>
-					<Hamburger
+					<Burger
+						className="burger-button"
 						open={open}
 						setOpen={setOpen}
 						aria-controls={menuId}
