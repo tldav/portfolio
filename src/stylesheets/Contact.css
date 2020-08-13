@@ -1,0 +1,197 @@
+/* CONTACT SECTION */
+
+.contact-flex-container {
+	display: flex;
+	justify-content: space-around;
+	flex-flow: row wrap;
+}
+.contact-form {
+	max-width: 420px;
+}
+
+.input-style {
+	color: #effffa;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	border-radius: 5px;
+	line-height: 22px;
+	background-color: transparent;
+	border: 2px solid #effffa;
+	transition: all 0.3s;
+	padding: 13px;
+	margin-bottom: 15px;
+	width: 100%;
+	box-sizing: border-box;
+	outline: 0;
+}
+
+.input-style:focus {
+	border: 2px solid #750ff7;
+}
+
+.contact-form textarea {
+	height: 150px;
+	line-height: 150%;
+	resize: vertical;
+}
+
+.input-style::placeholder {
+	color: #effffa;
+	opacity: 1;
+}
+
+.send-button {
+	font-family: "Montserrat", Arial, Helvetica, sans-serif;
+	width: 100%;
+	border-radius: 5px;
+	border: 0;
+	background-color: #effffa;
+	color: #750ff7;
+	font-size: 24px;
+	transition: all 0.3s;
+	margin-top: -4px;
+	font-weight: 700;
+}
+.send-button:hover {
+	background-color: #750ff7;
+	color: #effffa;
+}
+
+.success {
+	color: rgb(50, 218, 50);
+	font-size: 18px;
+	font-weight: bolder;
+	text-align: center;
+}
+.error {
+	font-weight: bolder;
+	color: rgb(255, 0, 0);
+	font-size: 18px;
+	text-align: center;
+}
+
+.contact-info-flex-container {
+	display: flex;
+	text-align: center;
+	justify-content: space-between;
+	flex-flow: column wrap;
+}
+
+.contact-icons {
+	font-size: 52px;
+	transition: all 0.2s ease-in-out;
+	margin: 0 auto;
+	color: #effffa;
+	cursor: pointer;
+}
+
+.contact-icons:hover {
+	transform: scale(1.25);
+	/* color: purple; */
+}
+
+.contact-info-flex-container h6 {
+	font-size: 18px;
+}
+
+@media (max-width: 430px) {
+	.contact-icons {
+		font-size: 38px;
+	}
+
+	.send-button {
+		font-size: 20px;
+	}
+}
+
+@media (max-width: 687px) {
+	.contact-flex-container {
+		flex-flow: column-reverse wrap;
+	}
+	.contact-form {
+		margin: auto;
+	}
+	.contact-info-flex-container {
+		flex-flow: row wrap;
+		/* text-align: left; */
+		justify-content: space-between;
+		padding: 40px 0;
+		align-items: center;
+	}
+	.contact-icons {
+		/* margin: 0 auto; */
+		/* padding: 20px; */
+	}
+
+	.contact-info-flex-container h6 {
+		margin: 0 auto;
+		/* padding-top: 20px; */
+	}
+}
+
+/* next breakpoint? 467 is when the row first wraps  ----- 525 is next breakpoint? i think  */
+
+@media (max-width: 705px) and (min-width: 688px) {
+	.contact-flex-container {
+		justify-content: space-between;
+	}
+}
+
+.square {
+	/* margin-left: -20%; */
+	color: rgb(53, 53, 53);
+	/* z-index: -1; */
+}
+
+.square:hover {
+	color: #750ff7;
+	margin-left: -20%;
+}
+
+.github {
+	/* margin-left: -20%; */
+	/* color: rgb(53, 53, 53); */
+	/* z-index: 200; */
+}
+
+/* .da-grid {
+	display: grid;
+}
+
+.layer-1,
+.layer-2 {
+	grid-column: 1;
+	grid-column: 1;
+} */
+
+/* .rela {
+	position: relative;
+}
+
+.absol {
+	position: absolute;
+}
+
+.purple {
+	color: #750ff7;
+	color: black;
+	transition: all 0.2s ease-in-out;
+}
+
+.white {
+	color: #effffa;
+	transition: all 0.2s ease-in-out;
+	z-index: 1;
+}
+
+.purple:hover {
+	color: #effffa;
+	color: #750ff7;
+}
+
+.white:hover {
+	color: #750ff7;
+	z-index: 100;
+	z-index: 1;
+} */

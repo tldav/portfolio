@@ -5,8 +5,14 @@ import {
 	faGithub,
 	faLinkedin,
 	faLinkedinIn,
-	faGit
+	faGithubSquare
 } from "@fortawesome/free-brands-svg-icons";
+import {
+	faSquare,
+	faCircle,
+	faChevronDown
+} from "@fortawesome/free-solid-svg-icons";
+import "../stylesheets/Contact.css";
 
 const Contact = () => {
 	const [status, setStatus] = useState("");
@@ -31,6 +37,11 @@ const Contact = () => {
 	return (
 		<div className="stage dark" id="contact">
 			<h1>Contact </h1>
+			<p>
+				here's a form contact me blah blah fill it out or don't red fox
+				jumped over the sleepy dog while the cat watched from the
+				closet.{" "}
+			</p>
 			<div className="contact-flex-container">
 				<form
 					className="contact-form"
@@ -38,6 +49,7 @@ const Contact = () => {
 					action="https://formspree.io/xleppyja"
 					method="POST"
 				>
+					{/* <p>here's a form contact me blah</p> */}
 					{/* <label htmlFor="name">Name</label> */}
 					<input
 						className="input-style"
@@ -84,17 +96,45 @@ const Contact = () => {
 						<p className="error">Email is required.</p>
 					)}
 				</form>
+
 				<div className="contact-info-flex-container">
+					{/* <p>Or find me around</p> */}
+					{/* <FontAwesomeIcon
+						className="contact-icons absol purple layer-2 square"
+						icon={faSquare}
+					/> */}
 					<FontAwesomeIcon
-						className="contact-icons"
-						icon={faGithub}
+						className="contact-icons absol white layer-1 github"
+						icon={faGithubSquare}
+						onClick={() =>
+							window.open(
+								"https://www.github.com/tldav",
+								"_blank"
+							)
+						}
 					/>
 					<FontAwesomeIcon
 						className="contact-icons"
-						icon={faLinkedinIn}
+						icon={faLinkedin}
+						onClick={() =>
+							window.open(
+								"https://www.linkedin.com/in/tldav/",
+								"_blank"
+							)
+						}
 					/>
-					<h5>tldavis09@yahoo.com</h5>
-					<h5>469-450-6708</h5>
+					{/* <a
+						href="https://www.linkedin.com/in/tldav/"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<FontAwesomeIcon
+							className="contact-icons"
+							icon={faLinkedin}
+						/>
+					</a> */}
+					<h6>tldavis09@yahoo.com</h6>
+					<h6>469-450-6708</h6>
 				</div>
 			</div>
 		</div>

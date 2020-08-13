@@ -6,7 +6,7 @@ const Footer = () => {
 	return (
 		<div className="footer stage">
 			<FontAwesomeIcon icon={faCopyright} /> Thomas Davis 2020 because
-			everyone puts this here.
+			everyone puts this here. Thank you for coming to my TED Talk.
 		</div>
 	);
 };

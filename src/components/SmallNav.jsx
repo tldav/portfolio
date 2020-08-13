@@ -1,5 +1,4 @@
 import React, { useState, useRef } from "react";
-import Hamburger from "./Hamburger";
 import Burger from "./Burger";
 import FocusLock from "react-focus-lock";
 import Menu from "./Menu";

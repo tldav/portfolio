@@ -17,6 +17,8 @@ body {
 p {
 	line-height: 1.71429;
 	font-size: 14px;
+	color: black;
+	color: rgb(53, 53, 53);
 }
 h1 {
 	font-size: 28px;
@@ -64,15 +66,6 @@ html {
 	padding: 48px;
 }
 
-#temp {
-	/* background-color: #e3f2ff; */
-	/* background-color: rgb(53, 53, 53);
-	color: white; */
-	/* background-color: #ecebf3; */
-}
-.intro {
-	/* background-color: #ECEBF3; */
-}
 .intro h1 {
 	display: inline;
 }
@@ -82,6 +75,10 @@ html {
 	color: #effffa;
 	border-radius: 5px;
 	box-shadow: rgba(172, 172, 172, 0.5) 0px 1px 3px 0px;
+}
+
+.dark p {
+	color: #effffa;
 }
 
 /* NAVIGATION */
@@ -108,17 +105,6 @@ html {
 		transform: translateY(0rem);
 	}
 }
-
-/* .hamburger {
-	background-color: #effffa;
-	z-index: 100;
-	border: none;
-}
-
-.hamburger button:focus {
-	box-shadow: inset 0 0 0 black, 0 0 3px 1px #750ff7;
-	box-shadow: #750ff7 0px 1px 3px 0px;
-} */
 
 /* Negative 170 will be used if i decide to use the left navbar instead of the right.  */
 .side-nav {
@@ -147,7 +133,13 @@ html {
 }
 .nav-style a:hover {
 	color: black;
+	color: rgb(53, 53, 53);
 }
+
+.pap {
+	color: rgb(53, 53, 53);
+}
+
 .nav-style a:hover ~ .pap {
 	color: #750ff7;
 }
@@ -171,145 +163,6 @@ html {
 .small-nav button {
 	z-index: 100;
 	margin: 5px;
-}
-
-/* TOOLS SECTION  */
-.tools-p {
-	font-size: 16px;
-	text-align: center;
-}
-.tools-list {
-	display: flex;
-	justify-content: space-around;
-	flex-flow: row wrap;
-}
-
-@media (max-width: 480px) {
-	.tools-list {
-		justify-content: space-between;
-	}
-}
-.react-icon {
-	color: #4bd8eb;
-}
-.js-icon {
-	color: #f7e030;
-}
-.git-icon {
-	color: #de4c36;
-}
-.node-icon {
-	color: #8cc84b;
-}
-.tools-icons {
-	display: flex;
-	justify-content: space-around;
-	flex-flow: row wrap;
-	font-size: 84px;
-	margin-top: 30px;
-}
-@media (max-width: 478px) {
-	.tools-icons {
-		justify-content: space-between;
-		font-size: 70px;
-	}
-}
-@media (max-width: 347px) {
-	.tools-icons {
-		font-size: 60px;
-	}
-}
-/* CONTACT SECTION */
-#contact {
-}
-
-.contact-flex-container {
-	display: flex;
-	justify-content: space-between;
-	flex-flow: row wrap;
-}
-.contact-form {
-	max-width: 420px;
-}
-
-.input-style {
-	color: #effffa;
-	font-family: Helvetica, Arial, sans-serif;
-	font-weight: 500;
-	font-size: 16px;
-	border-radius: 5px;
-	line-height: 22px;
-	background-color: transparent;
-	border: 2px solid #effffa;
-	transition: all 0.3s;
-	padding: 13px;
-	margin-bottom: 15px;
-	width: 100%;
-	box-sizing: border-box;
-	outline: 0;
-}
-
-.input-style:focus {
-	border: 2px solid #750ff7;
-}
-
-.contact-form textarea {
-	height: 150px;
-	line-height: 150%;
-	resize: vertical;
-}
-
-.input-style::placeholder {
-	color: #effffa;
-	opacity: 1;
-}
-
-.send-button {
-	font-family: "Montserrat", Arial, Helvetica, sans-serif;
-	width: 100%;
-	border-radius: 5px;
-	border: 0;
-	background-color: #effffa;
-	color: #750ff7;
-	font-size: 24px;
-	transition: all 0.3s;
-	margin-top: -4px;
-	font-weight: 700;
-}
-.send-button:hover {
-	background-color: #750ff7;
-	color: #effffa;
-}
-
-.success {
-	color: rgb(50, 218, 50);
-	font-size: 18px;
-	font-weight: bolder;
-	text-align: center;
-}
-.error {
-	font-weight: bolder;
-	color: rgb(255, 0, 0);
-	font-size: 18px;
-	text-align: center;
-}
-
-.contact-info-flex-container {
-	display: flex;
-	text-align: center;
-	justify-content: space-around;
-	flex-flow: column wrap;
-}
-
-.contact-icons {
-	font-size: 42px;
-	transition: all 0.2s ease-in-out;
-	margin: 0 auto;
-	color: #effffa;
-}
-
-.contact-icons:hover {
-	transform: scale(1.25);
 }
 
 /* FOOTER SECTION  */
@@ -356,3 +209,5 @@ html {
 		display: none;
 	}
 }
+
+/* 687px is break point for the contact section */

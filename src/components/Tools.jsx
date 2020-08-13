@@ -6,6 +6,7 @@ import {
 	faJs,
 	faNodeJs
 } from "@fortawesome/free-brands-svg-icons";
+import "../stylesheets/Tools.css";
 
 const Tools = ({ element }) => {
 	const [isDestkop, setDesktop] = useState(window.innerWidth > 360);

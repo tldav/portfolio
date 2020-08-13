@@ -1,10 +1,3 @@
-#projects {
-	/* background-color: rgb(134, 70, 70);
-    background-color: #fff; */
-	/* background-color: #7072183f; */
-	/* background-color: #ecebf3; */
-}
-
 .proj-container {
 	display: flex;
 	flex-flow: row wrap;

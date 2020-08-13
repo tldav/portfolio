@@ -1,0 +1,46 @@
+/* TOOLS SECTION  */
+.tools-p {
+	font-size: 16px;
+	text-align: center;
+}
+.tools-list {
+	display: flex;
+	justify-content: space-around;
+	flex-flow: row wrap;
+}
+
+@media (max-width: 480px) {
+	.tools-list {
+		justify-content: space-between;
+	}
+}
+.react-icon {
+	color: #4bd8eb;
+}
+.js-icon {
+	color: #f7e030;
+}
+.git-icon {
+	color: #de4c36;
+}
+.node-icon {
+	color: #8cc84b;
+}
+.tools-icons {
+	display: flex;
+	justify-content: space-around;
+	flex-flow: row wrap;
+	font-size: 84px;
+	margin-top: 30px;
+}
+@media (max-width: 478px) {
+	.tools-icons {
+		justify-content: space-between;
+		font-size: 70px;
+	}
+}
+@media (max-width: 347px) {
+	.tools-icons {
+		font-size: 60px;
+	}
+}
