@@ -3,6 +3,7 @@ import Burger from "./Burger";
 import FocusLock from "react-focus-lock";
 import Menu from "./Menu";
 import { useOnClickOutside } from "../hooks";
+import "../stylesheets/Nav.css";
 
 const SmallNav = ({ sticky }) => {
 	const [open, setOpen] = useState(false);

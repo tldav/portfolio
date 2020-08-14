@@ -1,0 +1,101 @@
+/* NAVIGATION */
+.small-nav {
+	position: absolute;
+	background-color: #effffa;
+	display: flex;
+	width: 100%;
+	max-width: 840px;
+	z-index: 10;
+}
+
+.small-nav-sticky {
+	position: fixed;
+	animation: moveDown 0.5s ease-in-out;
+	box-shadow: rgba(172, 172, 172, 0.5) 0px 1px 3px 0px;
+}
+
+@keyframes moveDown {
+	from {
+		transform: translateY(-5rem);
+	}
+	to {
+		transform: translateY(0rem);
+	}
+}
+
+/* Negative 170 will be used if i decide to use the left navbar instead of the right.  */
+.side-nav {
+	position: fixed;
+	margin-top: 60px;
+	margin-left: 30px;
+	/* margin-left: -170px; */
+}
+.mid-nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	margin: 0;
+	z-index: 10;
+}
+
+.nav-style li {
+	padding: 10px;
+	font-size: 18px;
+	direction: rtl;
+}
+.nav-style a {
+	color: #750ff7;
+	font-weight: bolder;
+	margin-left: 10px;
+}
+.nav-style a:hover {
+	color: black;
+	color: rgb(53, 53, 53);
+}
+
+.pap {
+	color: rgb(53, 53, 53);
+}
+
+.nav-style a:hover ~ .pap {
+	color: #750ff7;
+}
+
+.small-nav button:focus,
+.mid-nav button:focus {
+	outline: none;
+}
+
+.hamburger-button {
+	border-radius: 5px;
+	background-color: #effffa;
+	border: none;
+}
+
+.mid-nav button {
+	position: fixed;
+	width: 40px;
+}
+
+.small-nav button {
+	z-index: 100;
+	margin: 5px;
+}
+
+@media (max-width: 768px) {
+	.mid-nav {
+		display: none;
+	}
+}
+
+@media (min-width: 769px) {
+	.small-nav {
+		display: none;
+	}
+}
+
+@media (min-width: 1161px) {
+	.mid-nav {
+		display: none;
+	}
+}

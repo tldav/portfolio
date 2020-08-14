@@ -3,7 +3,7 @@ import React from "react";
 const Intro = () => {
 	const title = " <- Thomas Davis";
 	return (
-		<div className="intro stage">
+		<div className="intro stage ">
 			<img
 				className="me"
 				src="/assets/me.jpg"

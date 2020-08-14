@@ -1,5 +1,6 @@
 import React from "react";
 import NavList from "./NavList";
+import "../stylesheets/Nav.css";
 
 const SideNav = () => {
 	return (
