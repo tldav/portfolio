@@ -2,7 +2,7 @@ import React, { useState, useRef } from "react";
 import FocusLock from "react-focus-lock";
 import Menu from "./Menu";
 import Burger from "./Burger";
-import { useOnClickOutside } from "../hooks";
+import useOnClickOutside from "../hooks/useOnClickOutside";
 import "../stylesheets/Nav.css";
 
 const MidNav = () => {

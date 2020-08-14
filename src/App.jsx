@@ -2,18 +2,9 @@ import React from "react";
 import "./stylesheets/App.css";
 import { ThemeProvider } from "styled-components";
 import { theme } from "./theme";
-import useSticky from "./useSticky.js";
-import {
-	Intro,
-	Temp,
-	SideNav,
-	MidNav,
-	Contact,
-	Tools,
-	Projects,
-	SmallNav,
-	Footer
-} from "./components";
+import useSticky from "./hooks/useSticky";
+import { SideNav, MidNav, SmallNav, Footer } from "./components";
+import { Contact, Intro, Projects, Temp, Tools } from "./sections";
 
 const App = () => {
 	const { isSticky, element } = useSticky();

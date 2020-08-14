@@ -81,7 +81,7 @@ const Contact = () => {
 						onBlur={(e) => (e.target.placeholder = "Message")}
 					/>
 					{status === "SUCCESS" ? (
-						<p className="success">Thanks!</p>
+						<h3 className="success">Thanks!</h3>
 					) : (
 						<button className="send-button">
 							{" "}
@@ -93,7 +93,7 @@ const Contact = () => {
 						</button>
 					)}
 					{status === "ERROR" && (
-						<p className="error">Email is required.</p>
+						<h3 className="error">Email is required!</h3>
 					)}
 				</form>
 

@@ -73,19 +73,16 @@ const Tools = ({ element }) => {
 						className="js-icon"
 						// size={isDestkop ? "6x" : "4x"}
 					/>
-
 					<FontAwesomeIcon
 						icon={faReact}
 						className="react-icon"
 						// size={isDestkop ? "6x" : "5x"}
 					/>
-
 					<FontAwesomeIcon
 						icon={faNodeJs}
 						className="node-icon"
 						// size={isDestkop ? "6x" : "5x"}
 					/>
-
 					<FontAwesomeIcon
 						icon={faGitAlt}
 						className="git-icon"
