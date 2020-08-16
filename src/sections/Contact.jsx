@@ -2,16 +2,10 @@ import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
 	faTelegramPlane,
-	faGithub,
 	faLinkedin,
-	faLinkedinIn,
 	faGithubSquare
 } from "@fortawesome/free-brands-svg-icons";
-import {
-	faSquare,
-	faCircle,
-	faChevronDown
-} from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import "../stylesheets/Contact.css";
 
 const Contact = () => {
@@ -37,11 +31,6 @@ const Contact = () => {
 	return (
 		<div className="stage dark" id="contact">
 			<h1>Contact </h1>
-			{/* <p>
-				here's a form contact me blah blah fill it out or don't red fox
-				jumped over the sleepy dog while the cat watched from the
-				closet.{" "}
-			</p> */}
 			<p>
 				Feel free to reach out to me, whether it's to discuss a new
 				opportunity or to say hello. You can also learn more about me
@@ -54,8 +43,9 @@ const Contact = () => {
 					action="https://formspree.io/xleppyja"
 					method="POST"
 				>
-					{/* <p>here's a form contact me blah</p> */}
-					{/* <label htmlFor="name">Name</label> */}
+					{/* <label htmlFor="name" style={{fontSize: "15px"}}>
+						Use the form or email to tldavis09@yahoo.com
+					</label> */}
 					<input
 						className="input-style"
 						type="text"
@@ -64,8 +54,6 @@ const Contact = () => {
 						onFocus={(e) => (e.target.placeholder = "")}
 						onBlur={(e) => (e.target.placeholder = "Name")}
 					/>
-					{/* <label htmlFor="email">Email</label> */}
-
 					<input
 						className="input-style"
 						type="email"
@@ -74,8 +62,6 @@ const Contact = () => {
 						onFocus={(e) => (e.target.placeholder = "")}
 						onBlur={(e) => (e.target.placeholder = "Email")}
 					/>
-					{/* <label htmlFor="message">Message</label> */}
-
 					<textarea
 						className="input-style"
 						rows="4"
@@ -103,12 +89,9 @@ const Contact = () => {
 				</form>
 
 				<div className="contact-info-flex-container">
-					{/* <FontAwesomeIcon
-						className="contact-icons absol purple layer-2 square"
-						icon={faSquare}
-					/> */}
 					<FontAwesomeIcon
 						className="contact-icons"
+						title="https://www.github.com/tldav"
 						icon={faGithubSquare}
 						onClick={() =>
 							window.open(
@@ -119,6 +102,7 @@ const Contact = () => {
 					/>
 					<FontAwesomeIcon
 						className="contact-icons"
+						title="https://www.linkedin.com/in/tldav/"
 						icon={faLinkedin}
 						onClick={() =>
 							window.open(
@@ -127,24 +111,14 @@ const Contact = () => {
 							)
 						}
 					/>
-					{/* <a
-						href="https://www.linkedin.com/in/tldav/"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						<FontAwesomeIcon
-							className="contact-icons"
-							icon={faLinkedin}
-						/>
-					</a> */}
-					<h6
+					<FontAwesomeIcon
 						className="contact-icons"
+						title="tldavis09@yahoo.com"
+						icon={faEnvelope}
 						onClick={() =>
 							window.open("mailto:tldavis09@yahoo.com")
 						}
-					>
-						tldavis09@yahoo.com
-					</h6>
+					/>
 				</div>
 			</div>
 		</div>

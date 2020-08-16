@@ -16,8 +16,8 @@ const Projects = () => {
 		<div id="projects" className="stage">
 			<h1>Recent Work</h1>
 			<p>
-				Here are a few things I've worked on recently. See more on my{" "}
-				{githubLink}
+				Here are a few things I've worked on recently. See more of my
+				work on {githubLink}
 			</p>
 			<div className="proj-container">
 				{projectInfo.map((project) => {
