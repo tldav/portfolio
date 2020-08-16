@@ -1,11 +1,17 @@
+#projects a {
+	color: #750ff7;
+	font-weight: bolder;
+}
+#projects a:hover {
+	color: rgb(53, 53, 53);
+}
+
 .proj-container {
 	display: flex;
 	flex-flow: row wrap;
 }
 
 .proj-box {
-	/* padding: 1em 0; */
-	/* float: left; */
 	width: 50%;
 }
 
@@ -59,6 +65,10 @@
 	max-width: 420px;
 	margin: auto;
 	overflow: hidden;
+}
+
+.content-text {
+	margin-bottom: 16px;
 }
 
 .content .content-overlay {
@@ -143,7 +153,7 @@
 	.proj-box {
 		display: block;
 		width: 100%;
-		padding: 1em 0;
+		padding: 3px 0;
 	}
 	.content {
 		max-width: 400px;

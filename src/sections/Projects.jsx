@@ -3,10 +3,22 @@ import "../stylesheets/Projects.css";
 import projectInfo from "../project-info.json";
 
 const Projects = () => {
+	const githubLink = (
+		<a
+			href="https://github.com/tldav"
+			target="_blank"
+			rel="noopener noreferrer"
+		>
+			Github.
+		</a>
+	);
 	return (
 		<div id="projects" className="stage">
-			<h1>Some Garbo Apps</h1>
-			<p>Here are a few things I've worked on recently.</p>
+			<h1>Recent Work</h1>
+			<p>
+				Here are a few things I've worked on recently. See more on my{" "}
+				{githubLink}
+			</p>
 			<div className="proj-container">
 				{projectInfo.map((project) => {
 					return (

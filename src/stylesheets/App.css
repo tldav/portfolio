@@ -21,11 +21,12 @@ body {
 p {
 	line-height: 1.71429;
 	font-size: 14px;
-	color: black;
 	color: rgb(53, 53, 53);
+	margin-bottom: 22px;
 }
 h1 {
 	font-size: 28px;
+	margin-bottom: 26px;
 }
 ul {
 	list-style: none;

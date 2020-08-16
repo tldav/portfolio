@@ -37,10 +37,15 @@ const Contact = () => {
 	return (
 		<div className="stage dark" id="contact">
 			<h1>Contact </h1>
-			<p>
+			{/* <p>
 				here's a form contact me blah blah fill it out or don't red fox
 				jumped over the sleepy dog while the cat watched from the
 				closet.{" "}
+			</p> */}
+			<p>
+				Feel free to reach out to me, whether it's to discuss a new
+				opportunity or to say hello. You can also learn more about me
+				and my work on Linkedin and Github.
 			</p>
 			<div className="contact-flex-container">
 				<form
@@ -98,13 +103,12 @@ const Contact = () => {
 				</form>
 
 				<div className="contact-info-flex-container">
-					{/* <p>Or find me around</p> */}
 					{/* <FontAwesomeIcon
 						className="contact-icons absol purple layer-2 square"
 						icon={faSquare}
 					/> */}
 					<FontAwesomeIcon
-						className="contact-icons absol white layer-1 github"
+						className="contact-icons"
 						icon={faGithubSquare}
 						onClick={() =>
 							window.open(
@@ -133,8 +137,14 @@ const Contact = () => {
 							icon={faLinkedin}
 						/>
 					</a> */}
-					<h6>tldavis09@yahoo.com</h6>
-					<h6>469-450-6708</h6>
+					<h6
+						className="contact-icons"
+						onClick={() =>
+							window.open("mailto:tldavis09@yahoo.com")
+						}
+					>
+						tldavis09@yahoo.com
+					</h6>
 				</div>
 			</div>
 		</div>

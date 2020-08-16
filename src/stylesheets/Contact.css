@@ -60,21 +60,21 @@
 .contact-info-flex-container {
 	display: flex;
 	text-align: center;
-	justify-content: space-between;
+	justify-content: space-around;
 	flex-flow: column wrap;
 }
 
 .contact-icons {
 	font-size: 52px;
 	transition: all 0.2s ease-in-out;
-	margin: 0 auto;
+	margin: auto;
 	color: #effffa;
 	cursor: pointer;
 }
 
 .contact-icons:hover {
 	transform: scale(1.25);
-	/* color: purple; */
+	/* background-color: #750ff7; */
 }
 
 .contact-info-flex-container h6 {
@@ -101,7 +101,7 @@
 	.contact-info-flex-container {
 		flex-flow: row wrap;
 		/* text-align: left; */
-		justify-content: space-between;
+		justify-content: space-around;
 		padding: 40px 0;
 		align-items: center;
 	}
