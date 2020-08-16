@@ -8,6 +8,7 @@ const Projects = () => {
 			href="https://github.com/tldav"
 			target="_blank"
 			rel="noopener noreferrer"
+			className="github-link"
 		>
 			Github.
 		</a>
