@@ -1,15 +1,18 @@
 import React from "react";
+import "../stylesheets/Intro.css";
 
 const Intro = () => {
-	const title = " <- Thomas Davis";
 	return (
 		<div className="intro stage ">
-			<img
-				className="me"
-				src="/assets/me.jpg"
-				alt="Headshot of Thomas Davis"
-			/>
-			<h1>{title}</h1>
+			<div className="intro-flex-container">
+				<img
+					className="me"
+					src="/assets/me.jpg"
+					alt="Headshot of Thomas Davis"
+				/>
+				<h1>Thomas L. Davis</h1>
+				<p>Full Stack Developer</p>
+			</div>
 		</div>
 	);
 };

@@ -1,0 +1,14 @@
+/* .intro h1 {
+	display: inline;
+} */
+
+.intro-flex-container {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.intro h1 {
+	margin-bottom: 0;
+}
