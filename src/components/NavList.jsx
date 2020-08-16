@@ -2,7 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faFile, faFileCode } from "@fortawesome/free-regular-svg-icons";
-import { faMobileAlt, faCode } from "@fortawesome/free-solid-svg-icons";
+import { faMobileAlt } from "@fortawesome/free-solid-svg-icons";
 import "../stylesheets/Nav.css";
 
 const NavList = () => {

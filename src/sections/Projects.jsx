@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCode } from "@fortawesome/free-solid-svg-icons";
 import "../stylesheets/Projects.css";
 import projectInfo from "../project-info.json";
 
@@ -39,13 +41,19 @@ const Projects = () => {
 										{project.description}
 									</p>
 									<a
+										className="app-link"
 										href={project.appUrl}
 										target="_blank"
 										rel="noopener noreferrer"
 									>
 										App
 									</a>
+									<FontAwesomeIcon
+										className="code-icon"
+										icon={faCode}
+									/>
 									<a
+										className="code-link"
 										href={project.repoUrl}
 										target="_blank"
 										rel="noopener noreferrer"

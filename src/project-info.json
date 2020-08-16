@@ -21,7 +21,7 @@
 		"id": 3,
 		"name": "Workout App",
 		"css": "fit-title",
-		"description": "Create custom workouts and graph out progress. Created using JavaScript, Node, Express, and MongoDB with Mongoose. ",
+		"description": "Create custom workouts and graph your progress. Created using JavaScript, Node, Express, and MongoDB with Mongoose. ",
 		"image": "assets/fit-420-278.jpg",
 		"appUrl": "https://boiling-hamlet-55992.herokuapp.com/",
 		"repoUrl": "https://github.com/tldav/fitness-tracker"

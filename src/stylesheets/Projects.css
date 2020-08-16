@@ -126,16 +126,30 @@
 	letter-spacing: 0.15em;
 	margin-bottom: 0.5em;
 	text-transform: uppercase;
-	padding: 0 20px;
+	/* padding: 5px 20px; */
 	border-radius: 5px;
 	margin: 0 20px;
+	font-size: 18px;
 }
 
+/* *****FONT SIZE HERE is causing a weird issue where some underline effects in the links are purple instead of white*********** */
 .content-details p {
 	/* color: #effffa; */
 	color: #750ff7;
-	font-size: 1em;
+	font-size: 16px;
 	font-weight: bold;
+}
+
+.app-link {
+	padding: 5px 29px;
+}
+
+.code-link {
+	padding: 5px 20px;
+}
+
+.code-icon {
+	color: #750ff7;
 }
 
 .fadeIn-bottom {
