@@ -36,14 +36,14 @@ const Tools = ({ element }) => {
 						<li>Node</li>
 						<li>MySQL</li>
 						<li>MongoDB</li>
-						<li>Rest APi</li>
+						<li>Rest API</li>
 					</ul>
 					<ul>
 						<li>Git</li>
 						<li>Jest</li>
+						<li>Redux</li>
+						<li>Webpack</li>
 						<li>Material-UI</li>
-						<li>stuff</li>
-						<li>stuff</li>
 					</ul>
 				</div>
 			);
@@ -51,7 +51,7 @@ const Tools = ({ element }) => {
 		return (
 			<p className="tools-p">
 				JavaScript React HTML CSS Bootstrap Express Node MySQL MongoDB
-				Rest API Git Jest Material-UI stuff stuff
+				Rest API Redux Git Webpack Jest Material-UI
 			</p>
 		);
 	};
@@ -59,7 +59,7 @@ const Tools = ({ element }) => {
 	return (
 		<div className="tools stage dark">
 			<div ref={element}>
-				<h1>Tools</h1>
+				<h1>Some Tools I Use</h1>
 				<p>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit.
 					Quasi voluptate aut tenetur ea molestias at, pariatur rerum
@@ -68,26 +68,10 @@ const Tools = ({ element }) => {
 				</p>
 				{renderToolsList()}
 				<div className="tools-icons">
-					<FontAwesomeIcon
-						icon={faJs}
-						className="js-icon"
-						// size={isDestkop ? "6x" : "4x"}
-					/>
-					<FontAwesomeIcon
-						icon={faReact}
-						className="react-icon"
-						// size={isDestkop ? "6x" : "5x"}
-					/>
-					<FontAwesomeIcon
-						icon={faNodeJs}
-						className="node-icon"
-						// size={isDestkop ? "6x" : "5x"}
-					/>
-					<FontAwesomeIcon
-						icon={faGitAlt}
-						className="git-icon"
-						// size={isDestkop ? "6x" : "5x"}
-					/>
+					<FontAwesomeIcon icon={faJs} className="js-icon" />
+					<FontAwesomeIcon icon={faReact} className="react-icon" />
+					<FontAwesomeIcon icon={faNodeJs} className="node-icon" />
+					<FontAwesomeIcon icon={faGitAlt} className="git-icon" />
 				</div>
 			</div>
 		</div>

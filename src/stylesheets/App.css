@@ -70,12 +70,6 @@ ul {
 	background-color: rgb(53, 53, 53);
 }
 
-.me {
-	border-radius: 50%;
-	max-width: 80px;
-	border: 2px solid rgb(53, 53, 53);
-}
-
 /* FOOTER SECTION  */
 .footer {
 	text-align: center;

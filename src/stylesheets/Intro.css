@@ -9,6 +9,17 @@
 	align-items: center;
 }
 
+.me {
+	border-radius: 50%;
+	max-width: 80px;
+	/* border: 2px solid rgb(53, 53, 53); */
+}
+
 .intro h1 {
 	margin-bottom: 0;
+	font-size: 32px;
+}
+
+.job-title {
+	font-size: 18px;
 }

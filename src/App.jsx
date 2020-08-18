@@ -17,7 +17,7 @@ const App = () => {
 					<MidNav />
 					<SmallNav sticky={isSticky} />
 					<Intro />
-					<Temp />
+					{/* <Temp /> */}
 					<Tools element={element} />
 					<Projects />
 					<Contact />
