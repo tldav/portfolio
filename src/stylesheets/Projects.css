@@ -156,9 +156,52 @@
 	top: 80%;
 }
 
+@media (max-width: 330px) {
+	.content-details {
+		padding-top: 3px;
+		padding-bottom: 3px;
+	}
+}
+
+@media (max-width: 330px) {
+	.content-details a {
+		font-size: 14px;
+		margin: 0;
+	}
+	.app-link {
+		padding: 5px 19.25px;
+	}
+
+	.code-link {
+		padding: 5px 10px;
+	}
+}
+
 @media (max-width: 357px) {
 	.proj-title {
 		font-size: 38px;
+	}
+}
+
+@media (max-width: 370px) {
+	.content-details p {
+		font-size: 14px;
+	}
+	.content-details a {
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 391px) {
+	.content-text {
+		margin-bottom: 14px;
+	}
+	.content-details {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.content-details a {
+		margin: 0 10px;
 	}
 }
 
@@ -172,3 +215,5 @@
 		max-width: 400px;
 	}
 }
+
+/* 391 is the first pixel it starts at  */
