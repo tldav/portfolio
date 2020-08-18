@@ -7,7 +7,7 @@ const Intro = () => {
 			<div className="intro-flex-container">
 				<img
 					className="me"
-					src="/assets/me.jpg"
+					src={process.env.PUBLIC_URL + "/assets/me.jpg"}
 					alt="Headshot of Thomas Davis"
 				/>
 				<h1>Thomas L. Davis</h1>
