@@ -4,7 +4,7 @@ import { ThemeProvider } from "styled-components";
 import { theme } from "./theme";
 import useSticky from "./hooks/useSticky";
 import { SideNav, MidNav, SmallNav, Footer } from "./components";
-import { Contact, Intro, Projects, Temp, Tools } from "./sections";
+import { Contact, Intro, Projects, Tools } from "./sections";
 
 const App = () => {
 	const { isSticky, element } = useSticky();
@@ -17,7 +17,6 @@ const App = () => {
 					<MidNav />
 					<SmallNav sticky={isSticky} />
 					<Intro />
-					{/* <Temp /> */}
 					<Tools element={element} />
 					<Projects />
 					<Contact />
