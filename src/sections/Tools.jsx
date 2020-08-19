@@ -59,7 +59,7 @@ const Tools = ({ element }) => {
 	return (
 		<div className="tools stage dark">
 			<div ref={element}>
-				<h1>Some Tools I Use</h1>
+				<h1>Tools I Use</h1>
 				<p>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit.
 					Quasi voluptate aut tenetur ea molestias at, pariatur rerum
